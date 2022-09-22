@@ -11,25 +11,25 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Learn-Static Lesson Template
+title: University of Idaho Digital Collections Documentation
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
-title-icon: code-slash
+title-icon: pc-display-horizontal
 # description appears in sidebar footer
-description: "Create a lesson website with markdown"
+description: "Documentation and Instructions University of Idaho Library's Digital Collections Team"
 # keywords for meta tags used by search engines
-keywords: "workshops, websites, gh-pages, jekyll"
+keywords: "University of Idaho, digital collections, digitization, metadata, CollectionBuilder"
 # image for meta tags, will appear when sharing link on social media
-featured-image: "/images/uidaho-workshop.jpg"
+featured-image: "/images/uidaho-digital-collections.jpg"
 
 # author name, displayed in credits
-author: evanwill
+author: owikle + kxuidaho
 # year or date published, displayed in sidebar
 publication_year: 2022
 # location of code, the full url to your github repository
-source-code: https://github.com/learn-static/lesson-template
+source-code: https://github.com/owikle/digital-collections-docs
 # content license (typically "cc by-sa"), displayed in sidebar
 content_license: "CC BY-SA"
 # URL to the content license
@@ -43,7 +43,7 @@ content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
 #
 # header-background: 
 # header-text-color: 
-# breadcrumbs-background: 
+breadcrumbs-background: "#494440;"
 # breadcrumbs-text-color: 
 # active-nav-color: 
 # link-color:
