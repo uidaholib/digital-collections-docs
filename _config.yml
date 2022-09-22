@@ -1,0 +1,87 @@
+#########
+#
+# Learn-Static Lesson Template
+# a Jekyll template for a simple lesson or workshop website
+# with a sidebar content nav layout
+# https://github.com/learn-static/lesson-template
+#
+#########
+
+#######
+# SITE SETTINGS
+#
+# title appears in the header
+title: Learn-Static Lesson Template
+# title-icon appears in the header to give some pizazz (leave blank for none)
+# choose from Bootstrap Icons in _includes/bootstrap-icons
+# find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
+# some options: code-slash file-code gear tools lightblub book bookmark-star
+title-icon: code-slash
+# description appears in sidebar footer
+description: "Create a lesson website with markdown"
+# keywords for meta tags used by search engines
+keywords: "workshops, websites, gh-pages, jekyll"
+# image for meta tags, will appear when sharing link on social media
+featured-image: "/images/uidaho-workshop.jpg"
+
+# author name, displayed in credits
+author: evanwill
+# year or date published, displayed in sidebar
+publication_year: 2022
+# location of code, the full url to your github repository
+source-code: https://github.com/learn-static/lesson-template
+# content license (typically "cc by-sa"), displayed in sidebar
+content_license: "CC BY-SA"
+# URL to the content license
+content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
+
+##########
+# THEME CUSTOMIZATION [optional!]
+#
+# leave these commented out or blank for defaults.
+# these options tweak CSS, so should be valid CSS values.
+#
+# header-background: 
+# header-text-color: 
+# breadcrumbs-background: 
+# breadcrumbs-text-color: 
+# active-nav-color: 
+# link-color:
+# next-button-color:
+# text-color: 
+# base-font-size:
+
+##########
+# URL VARIABLES [optional!]
+#
+# Optional if using GitHub Pages! If building manually, these must be set correctly.
+#
+# use url for the domain, e.g. https://evanwill.github.io
+# on gh-pages follow the pattern: https://username.github.io
+# url:
+# use baseurl to add subsection of the domain, e.g. /workshop-template-b
+# on gh-pages this is a / followed by the name of the repository
+# baseurl is your github repository's name prefixed with a /
+# baseurl:
+
+
+##########
+# ROBOTS EXCLUDE [optional!]
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+
+#######
+# BUILD SETTINGS [usually leave as is]
+#
+# Defaults to simplify front matter
+defaults:
+  - scope:
+      path: "content"
+    values:
+      layout: "lesson-content"
+# ignore stuff
+exclude: [README.md, LICENSE, assets/lib/README.md]
+# Build settings
+markdown: kramdown
