@@ -11,21 +11,21 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: University of Idaho Digital Collections Documentation
+title: University of Idaho Library Digital Collections Documentation
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
 title-icon: pc-display-horizontal
 # description appears in sidebar footer
-description: "Documentation and Instructions University of Idaho Library's Digital Collections Team"
+description: "Documentation for University of Idaho Library's Digital Collections Team"
 # keywords for meta tags used by search engines
 keywords: "University of Idaho, digital collections, digitization, metadata, CollectionBuilder"
 # image for meta tags, will appear when sharing link on social media
 featured-image: "/images/uidaho-digital-collections.jpg"
 
 # author name, displayed in credits
-author: owikle + kxuidaho
+author: "owikle & kxuidaho"
 # year or date published, displayed in sidebar
 publication_year: 2022
 # location of code, the full url to your github repository
