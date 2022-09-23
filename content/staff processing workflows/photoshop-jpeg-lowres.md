@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Processing Workflows
 nav_order: 4
 title: Convert Access JPEG to LowRes JPEG in Photoshop
 topics:

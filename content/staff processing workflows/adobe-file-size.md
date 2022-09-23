@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Processing Workflows
 nav_order: 2
 title: Reduce File Size in Adobe Acrobat
 topics:

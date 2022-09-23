@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Processing Workflows
 nav_order: 3
 title: Convert Tiff to JPEG in Photoshop
 topics:
