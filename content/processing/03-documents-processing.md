@@ -1,8 +1,7 @@
 ---
 section: Processing
-nav_order: 2
+nav_order: 3
 title: Processing Documents
-topics:
 ---
 
 - Select the file(s) to be converted from your lowres jpg folder. 

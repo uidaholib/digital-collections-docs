@@ -1,13 +1,12 @@
 ---
 section: Staff Processing Workflows
-nav_order: 3
-title: Convert Tiff to JPEG in Photoshop
-topics:
+nav_order: 4
+title: Batch Convert Tiff to Jpeg
 ---
 
-#### Photoshop Batch Actions
+## Photoshop Batch Actions
 
-#### Tiff to Access Jpeg Action
+### Tiff to Access Jpeg Action
 
 - In Photoshop, make sure you have access to the Actions Window by selecting it under the Window menu (Window>Actions) or with the shortcut Alt+F9.
 

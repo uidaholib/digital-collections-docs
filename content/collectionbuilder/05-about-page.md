@@ -1,6 +1,6 @@
 ---
 section: CollectionBuilder
-nav_order: 3
+nav_order: 5
 title: About Page
 ---
 
@@ -68,6 +68,10 @@ And paste it *after* the parentheses in your hyperlink:
 `[GitHub Help](https://help.github.com/){:target="_blank" rel="noopener"}`
 
 This will ensure that your link opens in a new tab, like this: [GitHub Help](https://help.github.com/)
+
+---
+
+## Anchor links
 
 ---
 

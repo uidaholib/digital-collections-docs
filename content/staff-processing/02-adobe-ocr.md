@@ -1,20 +1,20 @@
 ---
-section_id: Staff Processing Workflows
-nav_order: 4
-title: Optical Character Recognition In Adobe Acrobat
-topics:
+section: Staff Processing Workflows
+nav_order: 2
+title: Optical Character Recognition
 ---
 
-#### Adobe Acrobat Pro DC OCR
+## Optical Character Recognition (OCR) in Adobe Acrobat Pro DC
 
 - Adobe Acrobat Pro DC has the OCR functions accessed from different menus.
+
 - With a PDF document open, select the "Scan & OCR" tool from the available tools on the right side of the application window.
 
 {% include figure.html img="AdobeProDCSidebar.jpg" alt="Adobe ProDC sidebar" caption="" width="25%" %}
 
 - Select the "Recognize Text" option on the Toolbar and select "In This File" from the dropdown menu.
 
-{% include figure.html img="AdobeProDCScanOCRToolbar.jpg" alt="Adobe ProDC Scan OCR Toolbar" caption="" width="75%" %}
+{% include figure.html img="AdobeProDCScanOCRToolbar.jpg" alt="Adobe ProDC Scan OCR Toolbar" caption="" width="100%" %}
 
 - Make sure the Settings are correct. PDFs should be downsampled to 300 dpi to reduce file size issues.
 
@@ -23,7 +23,7 @@ topics:
 - Click on the "Recognize Text" button to begin the process. Once the process has finished, save and close the file.
 
 {:#photoshop-batch-actions}
-#### Acrobat Batch OCR
+## Acrobat Batch OCR
 
 - In Adobe Acrobat Pro DC select the Tools window.
 
@@ -33,7 +33,7 @@ topics:
 
 - Click on the "Or recognize text in multiple files" option underneath the blue "Start" button.
 
-{% include figure.html img="AdobeProDCScanOCRTool.JPG" alt="Adobe ProDC Tools Window" caption="" width="75%" %}
+{% include figure.html img="AdobeProDCScanOCRTool.JPG" alt="Adobe ProDC Tools Window" caption="" width="50%" %}
 
 - Add all the files to be reduced either with the "Add Files…" button or by drag and dropping files to the window.
 

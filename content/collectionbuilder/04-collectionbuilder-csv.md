@@ -1,6 +1,6 @@
 ---
 section: CollectionBuilder
-nav_order: 2
+nav_order: 4
 title: CollectionBuilder-CSV
 ---
 
@@ -18,7 +18,6 @@ title: CollectionBuilder-CSV
 - Stop the server (`ctrl` + `c`), and run the `rake deploy` command
 - Once the site is finished building, copy over *all of the files* to the site's folder on the webserver
 - Check the live site to be sure that everything is functioning correctly
-
 
 # Building your Collection
 

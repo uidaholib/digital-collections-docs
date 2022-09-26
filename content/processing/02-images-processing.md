@@ -1,11 +1,12 @@
 ---
-section_id: Processing
+section: Processing
 nav_order: 2
 title: Processing Images
-topics:
 ---
 
 - If it hasn't been done already, go to the folder for this scanning project (in your personal 'Scans' folder) and make two new folders: one named 'access jpg', and the other 'lowres jpg'. 
+
+## Transform to Access Jpeg
 
 - Open Photoshop. Go to File > Automate > Batch. 
 
@@ -19,11 +20,13 @@ topics:
 
     - Click OK.
 
-    {% include figure.html img="batch_tif_jpg_2.jpg" alt="intro image here" caption="" width="100%" %}
+{% include figure.html img="batch_tif_jpg_2.jpg" alt="intro image here" caption="" width="100%" %}
 
 - After Photoshop has completed the action, make sure all the images have scanned to the correct folder. 
 
 - In the access jpg folder, open images in Photoshop and crop out the color bar. Balance images using the Levels tool in Photoshop if needed. Save and close images when done with them. 
+
+## Transform to Lowres Jpeg
 
 - Once finished with the whole access jpg folder, go back to Photoshop to File > Automate > Batch. 
 

@@ -1,8 +1,10 @@
 ---
-section_id: CollectionBuilder
-nav_order: 5
+section: CollectionBuilder
+nav_order: 2
 title: CollectionBuilder-CONTENTdm
 ---
+
+## Instructions to Create CB-cdm from scratch
 
 # Update collection branches
 
