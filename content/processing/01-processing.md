@@ -8,4 +8,4 @@ After you've scanned your items, you will need to process them into a variety of
 Not sure where to start?
 See the flow chart below to get an idea of your next steps.
 
-{% include figure.html img="processing-flow-chart.jpg" alt="digital object processing flow chart in black and white" caption="" width="100%" %}
+{% include figure.html img="processing-flowchart-color.jpg" alt="digital object processing flow chart in color with icons" caption="" width="100%" %}
