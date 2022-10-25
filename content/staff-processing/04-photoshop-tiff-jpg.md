@@ -4,6 +4,8 @@ nav_order: 4
 title: Batch Convert Tiff to Jpeg
 ---
 
+The CDIL preserves the TIF files produced during scanning as archival files, so the TIF files are not edited for color adjustment or visual presentation. An action in Adobe Photoshop is used to run a batch process on the archival TIF files to produce full resolution Jpeg copies that can be cropped and processed. Actions are a series of commands in Photoshop that have been recorded that Photoshop can play back to execute the same commands on different files.
+
 ## Photoshop Batch Actions
 
 ### Tiff to Access Jpeg Action
