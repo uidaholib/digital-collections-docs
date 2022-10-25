@@ -4,6 +4,8 @@ nav_order: 2
 title: Optical Character Recognition
 ---
 
+The CDIL uses an action in Adobe Photoshop to run a batch process to produce 300 dpi Jpeg copies of the full resolution processed Jpeg files. The 300 dpi Jpeg files are smaller in size and suitable for web publication.
+
 ## Optical Character Recognition (OCR) in Adobe Acrobat Pro DC
 
 - Adobe Acrobat Pro DC has the OCR functions accessed from different menus.
