@@ -4,6 +4,8 @@ nav_order: 2
 title: Optical Character Recognition
 ---
 
+After a PDF is created, the CDIL usually runs an Optical Character Recognition(OCR) process on the file using Adobe Acrobat. This OCR process can make the document text searchable by users and usually reduces the file size of the document. More recent versions of Adobe Acrobat have improved the algorithm used in the OCR process, so it is best to use the most recent version of the Acrobat software that is available. Cursive text and unusual typeface may not be converted to searchable text.
+
 ## Optical Character Recognition (OCR) in Adobe Acrobat Pro DC
 
 - Adobe Acrobat Pro DC has the OCR functions accessed from different menus.
