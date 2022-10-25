@@ -4,6 +4,8 @@ nav_order: 3
 title: Reduce PDF File Size
 ---
 
+Some PDF documents may be too large to easily be made available for patrons with slower internet connections. The CDIL often uses the Reduce File Size Tool available in Adobe Acrobat on these large files. The results are usually between 20% to 40% of the original file size without noticeable loss of image quality. It is the CDIL's recommendation that reduced files are created in a new folder to preserve the original file's image quality.
+
 {:#adobe-acrobat-reduced-file-size}
 ## Adobe Acrobat Reduced File Size
 
