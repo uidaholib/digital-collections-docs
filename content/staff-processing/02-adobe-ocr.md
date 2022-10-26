@@ -1,5 +1,5 @@
 ---
-section: Staff Processing Workflows
+section: Staff Workflows
 nav_order: 2
 title: Optical Character Recognition
 ---

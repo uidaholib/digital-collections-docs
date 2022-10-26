@@ -1,5 +1,5 @@
 ---
-section: Staff Processing Workflows
+section: Staff Workflows
 nav_order: 4
 title: Batch Convert Tiff to Jpeg
 ---

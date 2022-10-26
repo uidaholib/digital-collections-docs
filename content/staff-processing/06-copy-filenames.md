@@ -1,5 +1,5 @@
 ---
-section: Staff Processing Workflows
+section: Staff Workflows
 nav_order: 6
 title: List File Names
 ---
