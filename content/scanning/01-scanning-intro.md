@@ -25,5 +25,5 @@ See the table below for an overview of the specifications at which we scan and t
 | File Type | Photo | Document |
 | - | ----- | -------- |
 | initial scan | 600 dpi tiff | 400 dpi jpeg |
-| high-resolution copy | 600 dpi jpeg | pdf |
-| access copy | 300 dpi jpeg | reduced-size pdf |
+| access copy | 600 dpi jpeg | pdf |
+| lowres copy | 300 dpi jpeg | reduced-size pdf |
