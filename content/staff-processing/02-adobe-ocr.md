@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Information
 nav_order: 2
 title: Optical Character Recognition
 ---

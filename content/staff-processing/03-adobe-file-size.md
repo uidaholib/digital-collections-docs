@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Information
 nav_order: 3
 title: Reduce PDF File Size
 ---

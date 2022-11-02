@@ -1,5 +1,5 @@
 ---
-section: Staff Workflows
+section: Staff Information
 nav_order: 5
 title: Batch Convert Jpeg Size
 ---
