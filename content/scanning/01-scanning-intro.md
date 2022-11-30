@@ -19,11 +19,11 @@ Digitizing materials by scanning them with a flatbed, large format, or feed scan
 
 ## File Specifications
 
-See the table below for an overview of the specifications at which we scan and transform each item type.
+See the table below for an overview of the specifications at which we scan and process each item type.
 
 {:.table .table-bordered}
 | File Type | Photo | Document |
 | - | ----- | -------- |
-| initial scan | 600 dpi tiff | 400 dpi jpeg |
+| initial scan | 600 dpi tiff | 400 dpi jpeg (sometimes scanned directly to pdf) |
 | access copy | 600 dpi jpeg | pdf |
-| lowres copy | 300 dpi jpeg | reduced-size pdf |
+| lowres copy | 300 dpi jpeg | reduced-size pdf (size varies based on output from Adobe Acrobat) |
