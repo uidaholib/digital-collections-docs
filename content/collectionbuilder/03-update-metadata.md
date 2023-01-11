@@ -23,21 +23,23 @@ The steps below walk through this process.
 
 - Using the middle drop down button, switch to your desired branch.
 
-- Click the "Fetch Origin"/"Pull Changes" button to the right of the branch drop down, to ensure that you're working with the latest changes to the branch.
+- Click the "Fetch Origin" / "Pull Changes" button to the right of the branch drop down, to pull any changes and ensure that you're working with the latest changes to the branch.
 
 - Select the "Open in Visual Studio Code" button in the middle of the GitHub Desktop interface or in the top menu click on "Repository > Open in Visual Studio Code." This will open your desired branch in Visual Studio Code.
 
 - Locate and expand the _data folder. Inside will be your desired metadata csv (in most cases will match the collection branch name). Right click on the metadata csv and select "Open in File Explorer" (on Windows) or "Open in Finder" (on Mac).
 
+- Leave your File Explorer / Finder window open to the metadata csv (**but don't open the csv itself!**) and switch to a browser for the next step.
+
 ### Open Google Sheets
 
-- In your web browser, open Google Drive. On the left side of the screen, locate the “+ New” button. Click this button. From the drop-down, select Google Sheets. This will open a new Google Sheets document.
+- In your web browser, open Google Drive. On the left side of the screen, locate the "+ New" button. Click this button. From the drop-down, select Google Sheets. This will open a new Google Sheets document.
 
-- In your new Google Sheet, click File > Import. A white box with four tabs will appear. Select the tab labeled “Upload”. This brings up a large box with the words “Drag a file here” above a blue button labeled “Select a file from your device”.
+- In your new Google Sheet, click File > Import. A white box with four tabs will appear. Select the tab labeled "Upload". This brings up a large box with the words "Drag a file here" above a blue button labeled "Select a file from your device".
 
 - Locate your metadata csv that you located in your File Explorer / Finder in the previous step and without opening it drag it to the Google Drive Upload prompt.
 
-- The CSV will now upload to Google Sheets. At this point, a new box will appear on your Google Sheets screen titled “Import file”. Make sure that the correct file is listed under “File”. Leave the “import location” and “separator type” dropdowns as they are. Uncheck the box next to “Convert text to numbers, dates, and formulas”. Click the “Import data” button.
+- The CSV will now upload to Google Sheets. At this point, a new box will appear on your Google Sheets screen titled "Import file". Make sure that the correct file is listed under "File". Leave the "import location" and "separator type" dropdowns as they are. Uncheck the box next to "Convert text to numbers, dates, and formulas". Click the "Import data" button.
 
 - Your data will now populate your new spreadsheet. Make your edits.
 
@@ -45,15 +47,15 @@ The steps below walk through this process.
 
 - To download your metadata from Google Sheets:
 
-    - Click “File” and select “Download as Comma-separated values”
+    - Click "File" and select "Download as Comma-separated values"
 
-    - Locate the metadata CSV you’ve just downloaded on your computer (probably in the “Downloads” folder!) — but don’t open it!
+    - Locate the metadata CSV you’ve just downloaded on your computer (probably in the "Downloads" folder!) — but don’t open it!
 
 - *Without opening it* (to avoid issues with Excel scrambling your UTF-8 encoding), ***rename this file the exact same filename as your current collection metadata CSV***.
 
 - Open your collection repository in Visual Studio Code. Locate the _data folder.
 
-- Drag the CSV you just downloaded and renamed from your File Explorer / Finder and drop it directly into the _data folder that you see in Visual Studio Code. Since you gave it the same filename as your previous metadata file, Visual Studio Code will give you the message “A file or folder with the name ‘demo_metadata.csv’ already exists in the destination folder. Do you want to replace it?”. Select “Replace” (remember, Git tracks changes, so you can always see the older iterations of your metadata in your commits history and go back to them if you need them).
+- Drag the CSV you just downloaded and renamed from your File Explorer / Finder and drop it directly into the _data folder that you see in Visual Studio Code. Since you gave it the same filename as your previous metadata file, Visual Studio Code will give you the message "A file or folder with the name ‘demo_metadata.csv’ already exists in the destination folder. Do you want to replace it?". Select "Replace" (remember, Git tracks changes, so you can always see the older iterations of your metadata in your commits history and go back to them if you need them).
 
 ### Double Check and Push Changes
 
