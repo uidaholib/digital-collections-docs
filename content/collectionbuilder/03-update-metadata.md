@@ -27,7 +27,7 @@ The steps below walk through this process.
 
 - Select the "Open in Visual Studio Code" button in the middle of the GitHub Desktop interface or in the top menu click on "Repository > Open in Visual Studio Code." This will open your desired branch in Visual Studio Code.
 
-- Locate and expand the `_data` folder. Inside will be your desired metadata csv (in most cases will match the collection branch name). Right click on the metadata csv and select "Open in File Explorer" (on Windows) or "Open in Finder" (on Mac).
+- Locate and expand the _data folder. Inside will be your desired metadata csv (in most cases will match the collection branch name). Right click on the metadata csv and select "Open in File Explorer" (on Windows) or "Open in Finder" (on Mac).
 
 ### Open Google Sheets
 
