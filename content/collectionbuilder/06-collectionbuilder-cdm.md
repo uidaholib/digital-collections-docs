@@ -1,6 +1,6 @@
 ---
 section: CollectionBuilder
-nav_order: 2
+nav_order: 6
 title: CollectionBuilder-CONTENTdm
 ---
 

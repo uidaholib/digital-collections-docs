@@ -1,6 +1,6 @@
 ---
 section: CollectionBuilder
-nav_order: 3
+nav_order: 4
 title: CONTENTdm - New Items
 ---
 
