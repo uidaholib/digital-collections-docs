@@ -120,7 +120,7 @@ title: Metadata Guidelines
 - Sometimes this is a single physical collection here at U of I and sometimes this is from several collections (check with your supervisor to identify the source of the items you are describing). 
 - This will sometimes include the physical collection's collection number or call number, so people are able to find the item in-person if they want to.
 - Generally follows the pattern "collection name, collection number (if available), organization name".
-- If a finding aid is available for the collection, link to it using the following html code. Replace the value `https://archiveswest.orbiscascade.org/ark:/80444/xv40698/` with the link to your collection's finding aid.: `<a href="https://archiveswest.orbiscascade.org/ark:/80444/xv40698/" target="_blank" rel="noopener">https://archiveswest.orbiscascade.org/ark:/80444/xv40698/</a>` 
+- If a finding aid or Primo record is available for the collection, link to it using the following html code. Replace the value `https://archiveswest.orbiscascade.org/ark:/80444/xv40698/` with the link to your collection's finding aid (or Primo record, if applicable): `<a href="https://archiveswest.orbiscascade.org/ark:/80444/xv40698/" target="_blank" rel="noopener">https://archiveswest.orbiscascade.org/ark:/80444/xv40698/</a>` 
 - Example value: `Idaho Cities and Towns Photographs, PG 5, University of Idaho Library Special Collections and Archives, <a href="https://archiveswest.orbiscascade.org/ark:/80444/xv40698/" target="_blank" rel="noopener">https://archiveswest.orbiscascade.org/ark:/80444/xv40698/</a>`
 
 ### type
