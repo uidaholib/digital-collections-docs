@@ -6,7 +6,7 @@ title: Update Metadata
 
 ## Updating Metadata for Live Collections
 
-If you need to make some substantial edits to your metadata or add new records, it’s often easiest to do this in Google Sheets, then re-add the metadata to your repository (note that we strongly recommend you use Google Sheets rather than Microsoft Excel. CollectionBuilder requires that CSV metadata be in UTF-8 encoding, and Excel cannot correctly export a CSV in UTF-8 encoding).
+If you need to make some substantial edits to metadata or add new records for a collection that's already live, it’s often easiest to do this in Google Sheets, then re-add the metadata to your repository (note that we strongly recommend you use Google Sheets rather than Microsoft Excel. CollectionBuilder requires that CSV metadata be in UTF-8 encoding, and Excel cannot correctly export a CSV in UTF-8 encoding).
 The steps below walk through this process.
 
 ### Open Repository and Locate Metadata on Computer
@@ -17,7 +17,7 @@ The steps below walk through this process.
 
     - For each repository, locate the green "Code" button on towards the top right of the GitHub repository window and click on it to expand the drop down. Select the option to "Open with GitHub Desktop." This will clone the repository to your computer and enable you to access it from GitHub Desktop.
 
-- Locate your repository branch name in the [Collection Updates](https://vandalsuidaho.sharepoint.com/:x:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Collection%20Updates.xlsx?d=w6432809351bc4863bc70f4517fd61067&csf=1&web=1&e=tHwT3j) spreadsheet. Note whether it is in collectionbuilder-csv or collectionbuilder-cdm. 
+- Locate your repository branch name in the [Collection Updates](https://vandalsuidaho.sharepoint.com/:x:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Collection%20Updates.xlsx?d=w6432809351bc4863bc70f4517fd61067&csf=1&web=1&e=tHwT3j) spreadsheet. Note whether it is in collectionbuilder-csv-template or collectionbuilder-cdm-template. 
 
 - Back in the GitHub Desktop window, use the top left drop down button to switch your current repository to collectionbuilder-csv-template or collectionbuilder-cdm-template, depending on which one your branch is in.
 
@@ -41,7 +41,11 @@ The steps below walk through this process.
 
 - The CSV will now upload to Google Sheets. At this point, a new box will appear on your Google Sheets screen titled "Import file". Make sure that the correct file is listed under "File". Leave the "import location" and "separator type" dropdowns as they are. Uncheck the box next to "Convert text to numbers, dates, and formulas". Click the "Import data" button.
 
-- Your data will now populate your new spreadsheet. Make your edits.
+- Your metadata will now populate your new spreadsheet. Make your edits in the spreadsheet.
+
+{% include alert.html color="success" text="**Tip**: To look at metadata item-by-item in the digital collection website, go to your collection's Browse page. Click on any browse card to get to an item page. In the URL of the item page, locate the item's objectid (the unique identifier located at the end of the item page URL). Look back at the first record in the Google Sheet and locate that record's objectid. Back in the browser, replace the objectid at the end of the URL with the objectid that you found in the first record in the metadata. From this item page, you can press the right browse arrow to navigate through items by objectid, and follow along sequentially in your metadata spreadsheet." %}
+
+{% include alert.html color="danger" text="**Find an object that needs to be deleted?** Always check with the Digital Collections Team Lead before deleting any objects from a collection, even in the case of duplication." %}
 
 ### Download Metadata from Google Sheets
 
@@ -57,11 +61,13 @@ The steps below walk through this process.
 
 - Drag the CSV you just downloaded and renamed from your File Explorer / Finder and drop it directly into the _data folder that you see in Visual Studio Code. Since you gave it the same filename as your previous metadata file, Visual Studio Code will give you the message "A file or folder with the name ‘demo_metadata.csv’ already exists in the destination folder. Do you want to replace it?". Select "Replace" (remember, Git tracks changes, so you can always see the older iterations of your metadata in your commits history and go back to them if you need them).
 
-### Double Check and Push Changes
+### Preview Your Changes
 
-- Run `bundle exec jekyll s` and look through the site to make sure everything is working correctly
+- Run `bundle exec jekyll s` (if you're in a collectionbuilder-csv-template branch) or `jekyll s` (if you're in a collectionbuilder-cdm-template branch) and look through the demo site to make sure everything is working correctly
 
 - When you're satisfied that the changes are correct, stop the server (`ctrl` + `c`)
+
+### Push Your Changes
 
 - Commit and push your changes using either GitHub Desktop or the command line or Visual Studio Code.
 

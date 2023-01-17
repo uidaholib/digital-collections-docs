@@ -4,8 +4,6 @@ nav_order: 2
 title: Build a Collection
 ---
 
-## Building your Collection
-
 ### Developing Locally 
 
 Before serving/building your project for the **first time**, open terminal in the repository root and run `bundle install`. 
