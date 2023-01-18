@@ -174,7 +174,6 @@ title: Metadata Guidelines
 - It should be presented as a [creativecommons.org](https://creativecommons.org/) URI or a [rightsstatements.org](https://rightsstatements.org/en/) URI. 
 - Options include:
     - **In Copyright - Educational Use Permitted**: `http://rightsstatements.org/vocab/InC-EDU/1.0/`
-    - **In Copyright - Rights-Holder(s) Unlocatable or Unidentifiable**: `http://rightsstatements.org/vocab/InC-RUU/1.0/`
     - **No Copyright**: `http://rightsstatements.org/vocab/NoC-US/1.0/`
 - In most cases, you'll use the URI for "Educational Use Permitted". Only use the URI value (starts with `http`), *not* the words "Educational Use Permitted".
 - For additional options not shown above, see [rightsstatements.org](https://rightsstatements.org/en/).
