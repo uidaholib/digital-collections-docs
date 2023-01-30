@@ -63,7 +63,13 @@ The steps below walk through this process.
 
 ### Preview Your Changes
 
-- Run `bundle exec jekyll s` (if you're in a collectionbuilder-csv-template branch) or `jekyll s` (if you're in a collectionbuilder-cdm-template branch) and look through the demo site to make sure everything is working correctly
+- Open your collection repository in Visual Studio Code.
+
+- Open Visual Studio Code's terminal by pressing `ctrl` + `~` (alternately, click on "Terminal" in the Visual Studio Code menu at the top of your window, and select "New Terminal").
+
+- Within the terminal, type `bundle exec jekyll s` (if you're in a collectionbuilder-csv-template branch) or `jekyll s` (if you're in a collectionbuilder-cdm-template branch) and press enter. Copy the server address that the terminal outputs and open it in a browser window. 
+
+- Look through the demo site to make sure everything is working correctly.
 
 - When you're satisfied that the changes are correct, stop the server (`ctrl` + `c`)
 
