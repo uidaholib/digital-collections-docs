@@ -87,8 +87,6 @@ Add the archived Perma.cc link to your citations like this:
 
 Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” The Spokesman-Review, March 30, 2009, https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/. (Archived: https://perma.cc/LN7F-Q2CW) 
 
-You are encouraged to add any other links to that is relevant to the digital collection you are working on even if they are not listed as a citation. This applies to links within the text of an About page itself that are not included in the citation list.
-
 ---
 
 ## Horizontal Line Breaks
