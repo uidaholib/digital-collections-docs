@@ -75,6 +75,22 @@ This will ensure that your link opens in a new tab, like this: [GitHub Help](htt
 
 ---
 
+## Perma.cc ##
+
+Use Perma.cc, a web archiving service, to capture archive copies of web pages that we cite in About pages. This is done to prevent ink rot--broken and incorrect links.
+
+If using Perma.cc for the first time, please refer to this documentation to initially set up a Perma.cc account: [https://evanwill.github.io/web-cites/content/3-perma.html](https://evanwill.github.io/web-cites/content/3-perma.html).
+
+Once logged in, navigate to UI Library DDS > Digital Collection About pages. Select the collection folder you are working on or create a new folder. Then, add your link.
+
+Add the archived Perma.cc link to your citations like this: 
+
+Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” The Spokesman-Review, March 30, 2009, https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/. (Archived: https://perma.cc/LN7F-Q2CW) 
+
+You are encouraged to add any other links to that is relevant to the digital collection you are working on even if they are not listed as a citation. This applies to links within the text of an About page itself that are not included in the citation list.
+
+---
+
 ## Horizontal Line Breaks
 
 Sometimes you may want to add greater distinction between sections of your essay.
