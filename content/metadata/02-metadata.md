@@ -52,10 +52,15 @@ title: Metadata Guidelines
 - If you know the exact date for an item, fill it in using the yyyy-mm-dd format.
 - If you only know the year and month, simply leave off the day: 1955-12. Likewise, if you only know the year, just enter the year: 1955. 
 - If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
-    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in 'yes' for the 'date is approximate' cell in this situation.
+    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in the 'archival date' cell in this situation.
+- If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
-### date is approximate
+### archival date
+- This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
+Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
+
+### date is approximate (legacy only, don't use for new collections)
 - This field lets anyone looking at the collection know that we are certain of our estimation, not that our estimation is the accurate date.
 - Only fill out 'yes' if the Year, Year-Month, or an actual estimation is provided. If date is accurate, leave blank.
 - Example value: `yes`
@@ -145,7 +150,7 @@ title: Metadata Guidelines
 
 ### relation
 - This field indicates if there are any relationships between resources. 
-- An example of this would be if a collection contains material from another collection, or is similar to material in another collection. The title of the related collection would be the value for this field.
+- An example of this would be if a collection contains material from another collection, or is similar to material in another collection. The title of the related collection would be the value for this field. The related collection may be physical or digital.
 - This is not an often used field, and will usually be populated by the Digital Projects Manager. 
 - Example values: [The Argonaut](https://www.lib.uidaho.edu/digital/argonaut/) digital collection might include the `Argonaut Photograph Collection` as a relation
 
@@ -169,8 +174,8 @@ title: Metadata Guidelines
 ### rights
 - A copyright statement that consists of a free-text statement and a standardized rights statement. 
 - These statements indicate to viewers and researchers if permissions are required to use the material in publication, and how to attribute the item once used. 
-- Suggested value for material **in copyright, with educational use permitted**: ``
-- Suggested value for **no copyright, public domain material**: ``
+- Suggested value for material **in copyright**: `In copyright, educational use permitted. Educational use includes non-commercial reproduction of text and images in materials for teaching and research purposes. For other contexts beyond fair use, including digital reproduction, please contact the University of Idaho Library Special Collections and Archives Department at [libspec@uidaho.edu](mailto:libspec@uidaho.edu). The University of Idaho Library is not liable for any violations of the law by users.`
+- Suggested value for **no copyright**: `Material has likely passed into public domain. Digital reproductions are made available by University of Idaho Library for educational purposes, and future use should acknowledge this repository. For more information, please contact University of Idaho Library Special Collections and Archives Department at [libspec@uidaho.edu](mailto:libspec@uidaho.edu). The University of Idaho Library is not liable for any violations of the law by users.`
 - Not sure about the rights for your item? Refer to the [Cornell Library copyright guide](https://guides.library.cornell.edu/copyright/publicdomain) to determine if the item is old enough that its copyright has expired.
 
 ### rightsstatement
