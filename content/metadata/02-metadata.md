@@ -52,11 +52,11 @@ title: Metadata Guidelines
 - If you know the exact date for an item, fill it in using the yyyy-mm-dd format.
 - If you only know the year and month, simply leave off the day: 1955-12. Likewise, if you only know the year, just enter the year: 1955. 
 - If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
-    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in the 'archival date' cell in this situation.
+    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in the 'creation date' cell in this situation.
 - If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
-### archival date
+### creation date
 - This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
 Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
 
