@@ -56,7 +56,7 @@ title: Metadata Guidelines
 - If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
-### creation date
+### date created
 - This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
 Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
 
@@ -162,7 +162,7 @@ Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated
 
 ### contributing institution
 - Most of our digital collections are owned by the University of Idaho Library, but some of them originate from other institutions or individuals. Some digital collections are combinations of U of I Library materials and materials from other institutions. 
-- Citing the Contributing Institution notes attribution as well as protects U of I from potential copyright issues. 
+- When appropriate, citing the Contributing Institution notes attribution as well as protects U of I from potential copyright issues. 
 - Example value: `Potlatch Historical Society`
 
 ### language
