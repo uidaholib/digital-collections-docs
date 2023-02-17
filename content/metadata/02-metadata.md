@@ -56,7 +56,7 @@ title: Metadata Guidelines
 - If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
-### date created
+### archival date
 - This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
 Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
 
