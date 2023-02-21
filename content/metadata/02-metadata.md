@@ -60,6 +60,11 @@ title: Metadata Guidelines
 - This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
 Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
 
+- This is the formula to populate the archival date field in Google Sheets using the previous "date" field in the format YYYY-MM-DD. The cell value refers to the cell containing the date. For ex. "A2."
+=DAY(cell)&" "&TEXT(cell,"mmmm")&" "&YEAR(cell) 
+- For dates without a day (YYYY-MM), use the following formula.
+=TEXT(cell,"mmmm")&" "&YEAR(cell)
+
 ### date is approximate (legacy only, don't use for new collections)
 - This field lets anyone looking at the collection know that we are certain of our estimation, not that our estimation is the accurate date.
 - Only fill out 'yes' if the Year, Year-Month, or an actual estimation is provided. If date is accurate, leave blank.
