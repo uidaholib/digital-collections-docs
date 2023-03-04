@@ -4,17 +4,8 @@ nav_order: 2
 title: Metadata Guidelines
 ---
 
-<div class="row text-center pt-3 pb-4">
-<div class="col-md-12">
-{% include button.html text="Student Metadata Fields" link="/content/metadata/02-metadata.html#students" color="outline-dark" %}
-{% include button.html text="Staff Metadata Fields" link="/content/metadata/02-metadata.html#staff" color="outline-dark" %}
-</div>
-</div>
-
 ---
 
-{:#students .pb-4}
-## Metadata Fields for Students to Fill In
 
 ### title 
 - *required*
@@ -58,12 +49,18 @@ title: Metadata Guidelines
 
 ### archival date
 - This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
-Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
+- Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
+
+{% capture archival-date %}
+#### Staff instructions to populate archival date
 
 - This is the formula to populate the archival date field in Google Sheets using the previous "date" field in the format YYYY-MM-DD. `=DAY(cell)&" "&TEXT(cell,"mmmm")&" "&YEAR(cell)`
 - You will need to replace "cell" with the cell reference containing the date. For example: `A2`
 - For dates without a day (YYYY-MM), use the following formula.
 `=TEXT(cell,"mmmm")&" "&YEAR(cell)`
+{% endcapture %}
+
+{% include alert.html text=archival-date color="info" %}
 
 ### date is approximate (legacy only, don't use for new collections)
 - This field lets anyone looking at the collection know that we are certain of our estimation, not that our estimation is the accurate date.
@@ -109,11 +106,6 @@ Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated
     - Document: `application/pdf`
     - Audio: `audio/mp3`
     - Video: `video/mp4`
-
----
-
-{:#staff .pb-4}
-## Metadata Fields for Staff to Fill In
 
 ### filename
 - *required* 
