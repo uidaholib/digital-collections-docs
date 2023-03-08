@@ -1,6 +1,6 @@
 ---
-section: Staff Information
-nav_order: 7
+section: Advanced Processing
+nav_order: 6
 title: Reduce PDF File Size
 ---
 

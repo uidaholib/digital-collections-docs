@@ -1,10 +1,12 @@
 ---
-section: CollectionBuilder
+section: Collection Creation
 nav_order: 5
 title: About Page
 ---
 
-# Notes on using Markdown for the About page
+Collection About Pages are written in Markdown.
+Below are notes on formatting your page.
+For more basic information on how Markdown works and general formatting see the [Learn-Static Intro to Markdown](https://www.markdownguide.org/cheat-sheet/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 ## Citations
 
@@ -71,11 +73,7 @@ This will ensure that your link opens in a new tab, like this: [GitHub Help](htt
 
 ---
 
-## Anchor links
-
----
-
-## Perma.cc ##
+## Perma.cc
 
 Use Perma.cc, a web archiving service, to capture archive copies of web pages that we cite in About pages. This is done to prevent ink rot--broken and incorrect links.
 

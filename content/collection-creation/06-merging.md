@@ -1,14 +1,8 @@
 ---
-section: CollectionBuilder
+section: Collection Creation
 nav_order: 6
-title: CollectionBuilder-CONTENTdm
+title: Merging Main into Branch
 ---
-
-## Instructions to Create CB-cdm from scratch
-
-# Update collection branches
-
-> major update December 2021
 
 ## Update main!
 
@@ -16,14 +10,13 @@ First, always make sure your `main` branch is up-to-date, do a `git pull` on mai
 
 ## Select a branch to update
 
-1. Use the digital_all_collections spreadsheet in AdminCollections google drive folder.
-2. Select a collection that has a value in the `cb_cdm_branch` field, but no value in the `branch_notes` field.
+1. In GitHub Desktop, find the branch you want to update and switch to it.
+2. Also do a `fetch` and `git pull` to update this branch with any remote changes.
 
 ## Merge main branch into the branch you've selected
 
-1. In GitHub Desktop, find the branch name and switch to it.
-2. In the Branches dropdown on GitHub Desktop, click the bottom button that says "Choose a branch to merge into [whatever branch you're on]," and choose the "main" branch. Once you select "main," the merge will begin.
-3. In most cases, there will be conflicting files, and you'll need to click a button that accepts this to continue the merge.
+1. In the Branches dropdown on GitHub Desktop, click the bottom button that says "Choose a branch to merge into [whatever branch you're on]," and choose the "main" branch. Once you select "main," the merge will begin.
+2. In most cases, there will be conflicting files, and you'll need to click a button that accepts this to continue the merge.
 
 ## Sort out merge conflicts
 
@@ -57,7 +50,7 @@ If the following files exist in _data, delete them (unless one of them is actual
 
 ## General
 
-1. Serve the site using the `jekyll s` command.
+1. Serve the site using the `jekyll s` command (for cb-cdm-template) or `bundle exec jekyll s` command (for cb-csv-template).
 2. Do a general overview of the site.
 3. On the **browse page** and **item pages**, make sure there are no broken links, images not showing up, etc. (if you see something amiss, fix it!)
     - Check the config-metadata.csv in the _data folder (remember, this controls what metadata shows up on the collection's item pages) and compare it with the collection's metadata spreadsheet. Are there any fields you think should be added to the metadata displaying on the collection's item pages? If so, add them to the config-metadata.csv. Make sure any field with browse_link = `true` in the config-metadata.csv is also included on the browse cards, using the config-browse.csv, since the browse links won't work properly if the fields aren't included on the browse cards. 
@@ -137,6 +130,7 @@ Edits to these logos will appear in `collection-banner.html` and `collection-nav
 Use VS Code and/or GitHub Desktop to commit and push your changes up to GitHub.
 
 ## Update the live site
+
 1. Stop the jekyll server (`ctrl` + `c`) and run the command `rake deploy`. This might take a few seconds to generate, depending on how big the collection is. When you see a "done" message in the terminal, this process is finished and you can move to the next step.
 2. Locate the collectionbuilder-cdm-template repository in your file explorer and navigate to the `_site` folder (you can also easily do this from VS Code by right clicking the `_site` folder and selecting "Reveal in File Explorer"). (Note: **you *must* be sure to only copy files from the _site folder**. Files outside of this folder will not be configured correctly for our server, and you'll notice right away that the site does not work.)
 3. Leaving this file explorer window open, proceed to open another file explorer window. In this one, select the `Websites (W:)` drive. Select www-lib-uidaho-edu > Content > Digital > the collection folder you want to update (in most cases, this folder name will match the branch name. If you don't see this folder name, check the record for the collection in the digital_all_collections spreadsheet, and look at the value for cdmid. If the folder name is not the cb_cdm_branch value, it should be the cdmid value, but this is rare.).
@@ -145,5 +139,5 @@ Use VS Code and/or GitHub Desktop to commit and push your changes up to GitHub.
 5. Check the live site to make sure everything looks correct. If it doesn't, make sure that you copied from the _site folder of the repository. If you did and it still looks wrong, let Olivia know.
 
 ## Update the digital_all_collections spreadsheet
-1. Add "done" and any notes to the klytie_updates column.
-2. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the current year and month.
+
+1. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the current year and month.

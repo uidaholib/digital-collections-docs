@@ -1,6 +1,6 @@
 ---
-section: Staff Information
-nav_order: 5
+section: Advanced Processing
+nav_order: 4
 title: Scanning and Processing Negatives
 ---
 

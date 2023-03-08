@@ -1,5 +1,5 @@
 ---
-section: CollectionBuilder
+section: Collection Creation
 nav_order: 3
 title: Update Metadata
 ---
@@ -45,7 +45,7 @@ The steps below walk through this process.
 
 {% include alert.html color="success" text="**Tip**: To look at metadata item-by-item in the digital collection website, go to your collection's Browse page. Click on any browse card to get to an item page. In the URL of the item page, locate the item's objectid (the unique identifier located at the end of the item page URL). Look back at the first record in the Google Sheet and locate that record's objectid. Back in the browser, replace the objectid at the end of the URL with the objectid that you found in the first record in the metadata. From this item page, you can press the right browse arrow to navigate through items by objectid, and follow along sequentially in your metadata spreadsheet." %}
 
-{% include alert.html color="danger" text="**Find an object that needs to be deleted?** Always check with the Digital Collections Team Lead before deleting any objects from a collection, even in the case of duplication." %}
+{% include alert.html color="danger" text="**Find an object that needs to be deleted?** Always check with the Digital Collections Team Lead before deleting any objects from a collection, even in the case of duplication. If there is a duplicate object in both negative and photograph format in the collection, keep the negative." %}
 
 ### Download Metadata from Google Sheets
 
@@ -76,6 +76,10 @@ The steps below walk through this process.
 ### Push Your Changes
 
 - Commit and push your changes using either GitHub Desktop or the command line or Visual Studio Code.
+
+### Submit Collection Update Form
+
+- When you're ready for your changes to be made live, submit the collection to the [Digital Collection Update Form](https://forms.office.com/Pages/ResponsePage.aspx?id=Y2u8fpJXGUqyCwS4JgSIU3e7paVIdVlLpxM0VLg7zbBURFFGWVFDMTE3QjFDQkNFT09MS1NPMUo1WC4u).
 
 ### Make Changes Live (Digital Projects Manager Only)
 

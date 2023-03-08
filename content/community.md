@@ -1,6 +1,5 @@
 ---
-section_id: Community Resources
-nav_order: 7
+nav_order: 8
 title: Community Resources
 ---
 

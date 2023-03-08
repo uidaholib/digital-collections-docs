@@ -1,6 +1,6 @@
 ---
-section: Staff Information
-nav_order: 6
+section: Advanced Processing
+nav_order: 5
 title: Optical Character Recognition
 ---
 

@@ -1,10 +1,10 @@
 ---
-section: CollectionBuilder
+section: Collection Creation
 nav_order: 2
-title: Build a Collection
+title: Preview Changes
 ---
 
-### Developing Locally 
+## Developing Locally 
 
 Before serving/building your project for the **first time**, open terminal in the repository root and run `bundle install`. 
 The Gem "bundler" will manage dependencies based on the project's "Gemfile", and generate a new "Gemfile.lock" with the full list of dependencies being used.

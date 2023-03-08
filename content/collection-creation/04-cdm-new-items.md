@@ -1,12 +1,10 @@
 ---
-section: CollectionBuilder
+section: Collection Creation
 nav_order: 4
-title: CONTENTdm - New Items
+title: CB-CDM Update
 ---
 
-# Update a collection with new items recently imported into CONTENTdm
-
-> April 2022
+Below are instructions for how to update a collection with new items recently imported into CONTENTdm
 
 ## Add objects to CONTENTdm
 

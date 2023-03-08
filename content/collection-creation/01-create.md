@@ -1,6 +1,6 @@
 ---
-section_id: CollectionBuilder
-nav_order: 5
+section_id: Collection Creation
+nav_order: 6
 title: Create a Collection
 ---
 

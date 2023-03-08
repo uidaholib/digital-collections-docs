@@ -43,18 +43,21 @@ title: Metadata Guidelines
 - If you know the exact date for an item, fill it in using the yyyy-mm-dd format.
 - If you only know the year and month, simply leave off the day: 1955-12. Likewise, if you only know the year, just enter the year: 1955. 
 - If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
-    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in the 'creation date' cell in this situation.
+    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in the 'archival date' cell in this situation.
 - If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
 ### archival date
-- This field with either be automatically populated by the Digital Projects Managers in the format DD Month YYYY, Month YYYY, or YYYY, OR it will be an approximate date range, represented as YYYY-YYYY. In the even that no date is known, the value will be `undated`.
+- This is an alternate, non-ISO date field to represent the ambiguity of some object dates.
+- If an object's date is somewhere within an approximate date range (i.e. "2020-2030" or "2020-2025"), enter that range into this cell in the format YYYY-YYYY.
+- In the even that no date is known, enter the value `undated`.
+- For all other dates, the Digital Projects Manager will populate the values in the format DD Month YYYY, Month YYYY, or YYYY.
 - Example values: `26 October 2023`; `October 2023`; `2023`; `2020-2030`; `undated`
 
 {% capture archival-date %}
 #### Staff instructions to populate archival date
 
-- This is the formula to populate the archival date field in Google Sheets using the previous "date" field in the format YYYY-MM-DD. `=DAY(cell)&" "&TEXT(cell,"mmmm")&" "&YEAR(cell)`
+- Use this formula to populate the archival date field in Google Sheets using the previous "date" field in the format YYYY-MM-DD. `=DAY(cell)&" "&TEXT(cell,"mmmm")&" "&YEAR(cell)`
 - You will need to replace "cell" with the cell reference containing the date. For example: `A2`
 - For dates without a day (YYYY-MM), use the following formula.
 `=TEXT(cell,"mmmm")&" "&YEAR(cell)`

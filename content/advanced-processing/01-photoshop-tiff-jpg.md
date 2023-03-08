@@ -1,6 +1,6 @@
 ---
-section: Staff Information
-nav_order: 2
+section_id: Advanced Processing
+nav_order: 5
 title: Batch Convert Tiff to Jpeg
 ---
 

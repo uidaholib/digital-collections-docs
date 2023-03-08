@@ -1,6 +1,6 @@
 ---
-section: Staff Information
-nav_order: 3
+section: Advanced Processing
+nav_order: 2
 title: Batch Convert Jpeg Size
 ---
 
