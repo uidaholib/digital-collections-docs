@@ -5,7 +5,7 @@ title: Create a Collection
 ---
 
 {% capture template %}
-#### Metadata Template
+**Metadata Template**
 
 Just starting a collection? Use this [metadata template](https://docs.google.com/spreadsheets/d/1dRgG-Xd28gRZ9ErbU6-1YtgNM6gHFEh3IFNOwKzpoRc/copy?usp=sharing).
 {% endcapture %}
