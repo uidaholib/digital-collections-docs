@@ -83,7 +83,7 @@ Once logged in, navigate to UI Library DDS > Digital Collection About pages. Sel
 
 Add the archived Perma.cc link to your citations like this: 
 
-Becky Kramer, “Pre-Dam Photos May Be Glimpse of Future,” The Spokesman-Review, March 30, 2009, https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/. (Archived: https://perma.cc/LN7F-Q2CW) 
+`Becky Kramer, "Pre-Dam Photos May Be Glimpse of Future," The Spokesman-Review, March 30, 2009, https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/. (Archived: https://perma.cc/LN7F-Q2CW)`
 
 ---
 
@@ -162,7 +162,7 @@ When you click on the links in the table of contents, and your page will automat
 
 Add a block quote to your About page using the block quote include:
 
-{% raw %}{% include feature/blockquote.html quote="Knowledge comes, but wisdom lingers" speaker="Alfred Lord Tennyson" source="Locksley Hall" %}{% endraw %}
+`{% raw %}{% include feature/blockquote.html quote="Knowledge comes, but wisdom lingers" speaker="Alfred Lord Tennyson" source="Locksley Hall" %}{% endraw %}`
 
 Options:
 - "quote" = quote text, can use Markdown
