@@ -57,10 +57,10 @@ title: Metadata Guidelines
 {% capture archival-date %}
 #### Staff instructions to populate archival date
 
-- Use this formula to populate the archival date field in Google Sheets using the "date" field in the format YYYY-MM-DD. `=DAY(cell)&" "&TEXT(cell,"mmmm")&" "&YEAR(cell)`
+- Use this formula to populate the archival date field in Google Sheets using the "date" field in the format YYYY-MM-DD. `=TEXT(cell,"dd")&" "&TEXT(cell,"mmmm")&" "&TEXT(cell, "yyyy")`
 - In the formula above, you will need to replace "cell" with the cell reference containing the date. For example: `A2`
 - For dates without a day (YYYY-MM), use the following formula.
-`=TEXT(cell,"mmmm")&" "&YEAR(cell)`
+`=TEXT(cell,"mmmm")&" "&TEXT(cell, "yyyy")`
 {% endcapture %}
 
 {% include alert.html text=archival-date color="info" %}
