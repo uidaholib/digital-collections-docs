@@ -140,4 +140,8 @@ Use VS Code and/or GitHub Desktop to commit and push your changes up to GitHub.
 
 ## Update the digital_all_collections spreadsheet
 
-1. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet to reflect the current year and month.
+1. Update the value for the `last_cb_update` field in the digital_all_collections spreadsheet (located in the uidahodigital Google Drive, in AdminCollections folder) to reflect the current year and month.
+
+## Update the Collection Updates spreadsheet
+
+1. If a new collection, add a new collection row to the [Collection Updates](https://vandalsuidaho.sharepoint.com/:x:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Collection%20Updates.xlsx?d=w6432809351bc4863bc70f4517fd61067&csf=1&web=1&e=ncx3hD) spreadsheet in the Digital Collections Team Sharepoint folder and add the current date to the "Date updates went live" column. If updating a current collection, find the collection's row in the same spreadsheet and add the current date to the "Date updates went live" column.
