@@ -18,6 +18,12 @@ Just starting a collection? Use this [metadata template](https://docs.google.com
 - In your metadata spreadsheet, create objectids for your collection items, use one word (such as `tabor` for Tabor Photograph Collection) + three zeros (ex: `tabor000`)
 - Make sure your jpegs and pdfs are all together in one folder, ready to be added to the repository
 
+#### Content Advisory
+
+If there are images that are offensive or may be triggering for users, turn on a content advisory feature by opening the _data/theme.yml file and giving the "content-alert" variable the value true.
+
+You will also need to add a new column to your metadata titled "sensitive". For every photo that you would like to be blurred in the collection, add the value `yes` to its "sensitive" field.
+
 ### Create Derivatives
 - Navigate to the [collectionbuilder-csv-template](https://github.com/uidaholib/collectionbuilder-csv-template) repo on GitHub
 - In the branch dropdown, create a new branch with name based on the collection name you used in your objectid (`tabor`). Use only lowercase letters for branch name, preferably one word.
