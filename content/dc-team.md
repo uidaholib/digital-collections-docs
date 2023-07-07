@@ -26,7 +26,7 @@ Links to team documents are located below.
 
 {% include button.html text="Digital Collection Repositories" link="https://github.com/orgs/uidaholib/teams/digital-collections-team/repositories" color="secondary" %}
 
-{% include button.html text="Collection Update Form" link="https://forms.office.com/Pages/ResponsePage.aspx?id=Y2u8fpJXGUqyCwS4JgSIU3e7paVIdVlLpxM0VLg7zbBURFFGWVFDMTE3QjFDQkNFT09MS1NPMUo1WC4u" color="secondary" %}
+{% include button.html text="Digital Collection Update Form" link="https://uidaho.co1.qualtrics.com/jfe/form/SV_eRuiZXzEVFKGGF0" color="secondary" %}
 
 </div>
 <div class="col-md-4 px-2" markdown="1">

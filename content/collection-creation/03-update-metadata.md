@@ -79,7 +79,7 @@ The steps below walk through this process.
 
 ### Submit Collection Update Form
 
-- When you're ready for your changes to be made live, submit the collection to the [Digital Collection Update Form](https://forms.office.com/Pages/ResponsePage.aspx?id=Y2u8fpJXGUqyCwS4JgSIU3e7paVIdVlLpxM0VLg7zbBURFFGWVFDMTE3QjFDQkNFT09MS1NPMUo1WC4u).
+- When you're ready for your changes to be made live, submit the collection to the [Digital Collection Update Form](https://uidaho.co1.qualtrics.com/jfe/form/SV_eRuiZXzEVFKGGF0).
 
 ### Make Changes Live (Digital Projects Manager Only)
 
