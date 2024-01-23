@@ -4,6 +4,11 @@ nav_order: 2
 title: Metadata Guidelines
 ---
 
+The sections below describe the standard fields and conventions used in our metadata template. 
+Additional fields can be added as needed to describe the unique qualities of the collection, however, the standardized fields should be filled as much as possible to ensure interoperability. 
+All field names should be lowercase and contain no spaces!
+Field values should be plain text only in most cases (i.e. no Markdown or HTML) unless it is a highly customized collection.
+
 ---
 
 
@@ -39,15 +44,15 @@ title: Metadata Guidelines
 - Example values: `Riegger, Hal`; `Barnard Studio (Wallace, Idaho)`
 
 ### date  
-- Refers to the date the item was created/published. 
+- Refers to the date the item was created/published in ISO format yyyy-mm-dd. 
 - If you know the exact date for an item, fill it in using the yyyy-mm-dd format.
 - If you only know the year and month, simply leave off the day: 1955-12. Likewise, if you only know the year, just enter the year: 1955. 
 - If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
-    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in YYYY-YYYY format (in this case, 1950-1960) in the 'archival date' cell in this situation.
+    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in YYYY-YYYY format (in this case, 1950-1960) in the 'archival_date' cell in this situation, but do not put the range in the "date" column.
 - If you do not know the date and cannot estimate it, simply leave this field blank.
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
-### archival date
+### archival_date
 - This is an alternate, non-ISO date field to represent the ambiguity of some object dates.
 - If an object's date is somewhere within an approximate date range (i.e. "2020-2030" or "2020-2025"), enter that range into this cell in the format YYYY-YYYY.
 - In the event that no date is known, enter the value `undated`.
@@ -65,7 +70,8 @@ title: Metadata Guidelines
 
 {% include alert.html text=archival-date color="info" %}
 
-### date is approximate (legacy only, don't use for new collections)
+### date_is_approximate 
+- **legacy only, don't use for new collections**
 - This field lets anyone looking at the collection know that we are certain of our estimation, not that our estimation is the accurate date.
 - Only fill out 'yes' if the Year, Year-Month, or an actual estimation is provided. If date is accurate, leave blank.
 - Example value: `yes`
@@ -93,9 +99,9 @@ title: Metadata Guidelines
 - The unique identifier assigned to the object by the object's (usually physical) source collection in Special Collections.
 - This is usually found on the folder or box the object is in. 
 - For new collections the identifier should always match the object's filename. See the [filenaming docs]({{ '/content/scanning/02-filenaming.html' | relative_url }}) for more information.
-- Example value: `ARG-02-16-1993`
+- Example value: `ARG-1993-02-16`
 
-### format original
+### format_original
 - This field specifies the format of the physical object that was digitized. 
 - There is no controlled vocabulary for this field. Choose a word or phrase that best describes the format, and try to be consistent across items in a single collection.
 - Example values: `black-and-white photograph, color photograph, article, scrapbook, newspaper clipping, magazine`  
@@ -124,7 +130,7 @@ title: Metadata Guidelines
 - The physical source of the material being scanned. 
 - Sometimes this is a single physical collection here at U of I and sometimes this is from several collections (check with your supervisor to identify the source of the items you are describing). 
 - This will sometimes include the physical collection's collection number or call number, so people are able to find the item in-person if they want to.
-- Generally follows the pattern "collection name, collection number (if available), organization name".
+- Generally follows the pattern "collection name, collection number (if available), organization name, link".
 - Example value: `Idaho Cities and Towns Photographs, PG 5, University of Idaho Library Special Collections and Archives`
 
 ### type
@@ -143,7 +149,7 @@ title: Metadata Guidelines
 - At minimum, the input should contain a value chosen from the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2003-02-12/).
 - Example values: `Image;StillImage`; `Image;MovingImage`; `Text`; `Sound`
 
-### finding aid
+### finding_aid
 - A link to the finding aid for the physical version of this resource, if it exists.
 - The value should be simply a URL without any HTML markup.
 - Example value: `https://archiveswest.orbiscascade.org/ark:/80444/xv40698/`
@@ -154,13 +160,13 @@ title: Metadata Guidelines
 - This is not an often used field, and will usually be populated by the Digital Projects Manager. 
 - Example values: [The Argonaut](https://www.lib.uidaho.edu/digital/argonaut/) digital collection might include the `Argonaut Photograph Collection` as a relation
 
-### digital collection
+### digital_collection
 - This field contains the name of the digital collection to which all of the material you are working with belongs. 
 - It lets those viewing the item know where they can find more materials related to this item in case they found it by searching for a subject, or through another linked entry. 
 - This also provides a connection with the physical material and helps individuals to know where it is located. 
 - Example value: `Argonaut Photograph Collection`
 
-### contributing institution
+### contributing_institution
 - Most of our digital collections are owned by the University of Idaho Library, but some of them originate from other institutions or individuals. Some digital collections are combinations of U of I Library materials and materials from other institutions. 
 - When appropriate, citing the Contributing Institution notes attribution as well as protects U of I from potential copyright issues. 
 - Example value: `Potlatch Historical Society`
@@ -174,8 +180,8 @@ title: Metadata Guidelines
 ### rights
 - A copyright statement that consists of a free-text statement and a standardized rights statement. 
 - These statements indicate to viewers and researchers if permissions are required to use the material in publication, and how to attribute the item once used. 
-- Suggested value for material **in copyright**: `In copyright, educational use permitted. Educational use includes non-commercial reproduction of text and images in materials for teaching and research purposes. For other contexts beyond fair use, including digital reproduction, please contact the University of Idaho Library Special Collections and Archives Department at [libspec@uidaho.edu](mailto:libspec@uidaho.edu). The University of Idaho Library is not liable for any violations of the law by users.`
-- Suggested value for **no copyright**: `Material has likely passed into public domain. Digital reproductions are made available by University of Idaho Library for educational purposes, and future use should acknowledge this repository. For more information, please contact University of Idaho Library Special Collections and Archives Department at [libspec@uidaho.edu](mailto:libspec@uidaho.edu). The University of Idaho Library is not liable for any violations of the law by users.`
+- Suggested value for material **in copyright**: `In copyright, educational use permitted. Educational use includes non-commercial reproduction of text and images in materials for teaching and research purposes. For other contexts beyond fair use, including digital reproduction, please contact the University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
+- Suggested value for **no copyright**: `Material has likely passed into public domain. Digital reproductions are made available by University of Idaho Library for educational purposes, and future use should acknowledge this repository. For more information, please contact University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
 - Not sure about the rights for your item? Refer to the [Cornell Library copyright guide](https://guides.library.cornell.edu/copyright/publicdomain) to determine if the item is old enough that its copyright has expired.
 
 ### rightsstatement
@@ -188,7 +194,7 @@ title: Metadata Guidelines
 - For additional options not shown above, see [rightsstatements.org](https://rightsstatements.org/en/).
 - Example value: `http://rightsstatements.org/vocab/NoC-US/1.0/`
 
-### original file name
-- Refers to either the collection of numbers and letters that designate its location within the Library or the original file name that may have been edited to fit our standards here at the Library. 
+### filename_original
+- Refers the original filename (typically of a born digital transferred file) that may have been edited to fit our standards here at the Library or has been renamed to match collection conventions. This can be useful for future work tracking issues or debugging problems. 
 
 ------------
