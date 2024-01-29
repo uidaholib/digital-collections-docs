@@ -1,6 +1,6 @@
 ---
-section_id: Collection Creation
-nav_order: 6
+section: Collection Creation
+nav_order: 1
 title: Create a Collection
 ---
 
@@ -14,8 +14,9 @@ Just starting a collection? Use this [metadata template](https://docs.google.com
 
 ## Steps for Creating a New Collection With CB-CSV
 
-### Prep
-- In your metadata spreadsheet, create objectids for your collection items, use one word (such as `tabor` for Tabor Photograph Collection) + three zeros (ex: `tabor000`)
+### Metadata Prep
+
+- In your metadata spreadsheet, create objectids for your collection items, use one word (such as `tabor` for Tabor Photograph Collection) + three zeros (ex: `tabor001`, or more zeros if larger collection)
 - Make sure your jpegs and pdfs are all together in one folder, ready to be added to the repository
 
 #### Content Advisory
@@ -25,6 +26,7 @@ If there are images that are offensive or may be triggering for users, turn on a
 You will also need to add a new column to your metadata titled "sensitive". For every photo that you would like to be blurred in the collection, add the value `yes` to its "sensitive" field.
 
 ### Create Derivatives
+
 - Navigate to the [collectionbuilder-csv-template](https://github.com/uidaholib/collectionbuilder-csv-template) repo on GitHub
 - In the branch dropdown, create a new branch with name based on the collection name you used in your objectid (`tabor`). Use only lowercase letters for branch name, preferably one word.
 - In GitHub Desktop, fetch and pull the changes to the collectionbuilder-csv-template repository.
@@ -33,6 +35,7 @@ You will also need to add a new column to your metadata titled "sensitive". For 
 - In the terminal, run the command `rake generate_derivatives`. This will create `thumbs` and `small` folders inside your `objects` folder, inside of which you'll find newly-created thumbs and smalls of the collection objects.
 
 ### Place Objects on Server
+
 - On the library web server, navigate to /digital/objects/, and create a new folder based on the name you gave to the collection's objectids and GitHub branch (in this case, the folder name is `tabor`).
 - Make sure that the `rake generate_derivatives` task is complete before doing the following steps.
 - Copy and paste the full sized objects from your repository's `objects` folder into this new `tabor` folder.

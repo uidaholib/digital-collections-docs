@@ -4,6 +4,8 @@ nav_order: 4
 title: CB-CDM Update
 ---
 
+**This is Legacy Documentation. We no longer use CONTENTdm!**
+
 Below are instructions for how to update a collection with new items recently imported into CONTENTdm
 
 ## Add objects to CONTENTdm

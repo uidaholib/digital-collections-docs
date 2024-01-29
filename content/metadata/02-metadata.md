@@ -6,8 +6,14 @@ title: Metadata Guidelines
 
 The sections below describe the standard fields and conventions used in our metadata template. 
 Additional fields can be added as needed to describe the unique qualities of the collection, however, the standardized fields should be filled as much as possible to ensure interoperability. 
-All field names should be lowercase and contain no spaces!
-Field values should be plain text only in most cases (i.e. no Markdown or HTML) unless it is a highly customized collection.
+
+General notes:
+
+- All field names should be lowercase and contain no spaces! (underscore `_` is okay)
+- Field values should be plain text only in most cases (i.e. no Markdown or HTML) unless it is a highly customized collection.
+- The first column should be objectid, and should be filled for *every* row (i.e. do not have blank values in the first column).
+- Ensure you handle CSVs correctly (i.e. do not use Excel to open or create CSVs!). Use Sheets or OpenRefine to correctly transform metadata in CSVs into XLSX or XLSX to CSV.
+- If you need a fresh starting spreadsheet, check the blank [metadata template in Sheets](https://docs.google.com/spreadsheets/d/1dRgG-Xd28gRZ9ErbU6-1YtgNM6gHFEh3IFNOwKzpoRc/copy?usp=sharing)
 
 ---
 
