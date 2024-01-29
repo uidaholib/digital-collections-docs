@@ -15,7 +15,7 @@ Links to team documents are located below.
 
 ## Documents
 
-{% include button.html text="Meeting Agendas" link="https://vandalsuidaho.sharepoint.com/:w:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Digital%20Collections%20Team%202023-34%20Meetings.docx?d=w34f892f755934d7dafe21b5a80b57ab4&csf=1&web=1&e=gciQx4" color="primary" %}
+{% include button.html text="Meeting Notes Folder" link="https://vandalsuidaho.sharepoint.com/:f:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team/2023-2024?csf=1&web=1&e=3ehcyd" color="primary" %}
 
 {% include button.html text="DC Team Sharepoint Folder" link="https://vandalsuidaho.sharepoint.com/:f:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team?csf=1&web=1&e=dmJkod" color="primary" %}
 
