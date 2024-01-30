@@ -204,3 +204,17 @@ General notes:
 - Refers the original filename (typically of a born digital transferred file) that may have been edited to fit our standards here at the Library or has been renamed to match collection conventions. This can be useful for future work tracking issues or debugging problems. 
 
 ------------
+
+## Legacy CONTENTdm fields
+
+Collections that were migrated out of CONTENTdm in 2023 will have several columns created by CONTENTdm. 
+They will generally look like:
+
+`date created,date modified,reference url,cdmid,contentdm file name,contentdm file path`
+
+Please retain: 
+
+- "reference url", rename the column to `cdm_url` (This should not be named "reference_url"! It is helpful to retain this incase we need to look up old CDM urls)
+- "cdmid"
+
+The other columns can be removed--if they are retained, rename with "cdm" in front (removing spaces) and do NOT include in data outputs.
