@@ -6,7 +6,6 @@ title: Lab Equipment
 {%- assign scanners = site.data.equipment -%}
 
 {:#scanners}
-## Lab Equipment
 
 An overview of the scanning equipment used in the CDIL. 
 
