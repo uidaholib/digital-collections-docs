@@ -1,6 +1,6 @@
 ---
-nav_order: 9
-title: About Digital Collections
+nav_order: 6
+title: Lab Equipment
 ---
 
 {%- assign scanners = site.data.equipment -%}

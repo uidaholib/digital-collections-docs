@@ -1,6 +1,6 @@
 ---
 section_id: Collection Creation
-nav_order: 6
+nav_order: 8
 title: Collection Templates
 ---
 

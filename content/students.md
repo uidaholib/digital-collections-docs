@@ -1,15 +1,13 @@
 ---
-nav_order: 7
+nav_order: 5
 title: Student Resources
 ---
 
-Resources for students conducting digitization work for the University of Idaho CDIL.
+Other areas for the University of Idaho’s Digital Scholarship and Open Strategies department:
 
-## Reference Links
-
-- [UI Digital Initiatives Home](https://www.lib.uidaho.edu/digital/)
+- [About us](https://www.lib.uidaho.edu/digital/about/)
 - [CDIL Home](https://cdil.lib.uidaho.edu/)
-- [Getty Art & Architecture Thesaurus](http://www.getty.edu/research/tools/vocabularies/aat/)
+- [Complete CollectionBuilder documentation](https://collectionbuilder.github.io/cb-docs/)
 
 ## Administrative Links
 

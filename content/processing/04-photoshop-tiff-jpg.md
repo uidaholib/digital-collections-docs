@@ -1,6 +1,6 @@
 ---
-section_id: Advanced Processing
-nav_order: 5
+section: Processing
+nav_order: 3
 title: Batch Convert Tiff to Jpeg
 ---
 

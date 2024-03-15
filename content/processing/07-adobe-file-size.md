@@ -1,5 +1,5 @@
 ---
-section: Advanced Processing
+section: Processing
 nav_order: 6
 title: Reduce PDF File Size
 ---
