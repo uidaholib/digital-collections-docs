@@ -29,7 +29,7 @@ Most digital collections are generated from a template repository following thes
 - Collection branch name, libobjects folder name, website folder name, and metadata csv filename should all be the same (if possible), matching the web location stub.
     - e.g. for "https://www.lib.uidaho.edu/digital/aers/", the stub is "aers", thus the branch is "aers", libobjects folder "aers", and metadata is "aers.csv".
 - In branches all customizations should be made by creating new layouts or display templates to avoid issues with updating.
-- "digital-collections-team" and "digital-maintainers" teams should have write access to all template repositories. Do not add individual collaborators (this makes it easier to maintain access).
+- "digital-collections-team" and "digital-maintainers" teams should have write access to all template repositories. **Do not add individual collaborators**, add members to the teams instead (this makes it easier to maintain access).
 
 Some digital collections are not created in the main templates:
 
