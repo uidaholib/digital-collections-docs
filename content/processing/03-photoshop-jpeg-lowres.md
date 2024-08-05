@@ -1,5 +1,5 @@
 ---
-section: Advanced Processing
+section: Processing
 nav_order: 2
 title: Batch Convert Jpeg Size
 ---

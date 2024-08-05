@@ -1,12 +1,11 @@
 ---
-nav_order: 9
-title: About Digital Collections
+nav_order: 6
+title: Lab Equipment
 ---
 
 {%- assign scanners = site.data.equipment -%}
 
 {:#scanners}
-## Lab Equipment
 
 An overview of the scanning equipment used in the CDIL. 
 
