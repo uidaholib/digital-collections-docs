@@ -1,5 +1,5 @@
 ---
-section: Collection Creation
+section: Interdepartmental Collections
 nav_order: 5
 title: About Page
 ---

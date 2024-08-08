@@ -1,5 +1,5 @@
 ---
-section: Collection Creation
+section: Interdepartmental Collections
 nav_order: 2
 title: Preview Changes
 ---

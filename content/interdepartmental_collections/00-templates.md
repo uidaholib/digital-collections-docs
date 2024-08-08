@@ -1,5 +1,5 @@
 ---
-section_id: Collection Creation
+section_id: Interdepartmental Collections
 nav_order: 8
 title: Collection Templates
 ---

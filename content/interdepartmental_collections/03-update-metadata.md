@@ -1,5 +1,5 @@
 ---
-section: Collection Creation
+section: Interdepartmental Collections
 nav_order: 3
 title: Update Metadata
 ---
