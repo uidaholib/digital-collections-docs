@@ -1,6 +1,6 @@
 ---
-section: Interdepartmental Collections
-nav_order: 6
+section: Legacy Documentation
+nav_order: 1
 title: Merging Main into Branch
 ---
 

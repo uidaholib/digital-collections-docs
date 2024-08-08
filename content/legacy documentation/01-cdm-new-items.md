@@ -1,6 +1,6 @@
 ---
-section: Interdepartmental Collections
-nav_order: 4
+section_id: Legacy Documentation
+nav_order: 9
 title: CB-CDM Update
 ---
 
