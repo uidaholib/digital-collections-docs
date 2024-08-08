@@ -7,10 +7,10 @@ title: Formatting
 Begin by opening your project management spreadsheet provided by the Digital Projects Manager or Digital Initiatives Librarian. 
 
 - Find the recording you are working on and open in a new window
-- Sign the “copy edit begun” field with your initials
+- Sign the `copy edit begun` field with your initials
 - Within the collection you are working on, go to the `Copy Edited` folder to find your recording
 
-Replace headers with semantics that will work for OHD (`case sensitive`). Columns A - F):
+Replace headers with semantics that will work for OHD (`case sensitive`). Columns A through F:
 - Speaker Name > speaker
 - Start Time > timestamp (no need to rename the End Time column)
 - Text > words
@@ -20,10 +20,10 @@ Replace headers with semantics that will work for OHD (`case sensitive`). Column
 
 If there are empty rows between the lines of dialogue in the transcripts:
 
-- Select column A and select Create a Filter
-- Select Clear and then select Blanks from the dropdown
+- Select column A and select `Create a Filter`
+- Select `Clear` and then select Blanks from the dropdown
 - Delete all of the empty rows
-- Remove Filter
+- `Remove Filter`
 - Add a space between the header and transcript content on row 2
 - Add brackets around timestamp
 - In D3, add this formula: `="["&B3&"]"`

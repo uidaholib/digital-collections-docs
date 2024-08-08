@@ -4,8 +4,6 @@ nav_order: 3
 title: About Pages and Formatting
 ---
 
-## About Pages
-
 Collection About Pages are written in Markdown.
 Below are notes on formatting your page.
 For more basic information on how Markdown works and general formatting see the [Learn-Static Intro to Markdown](https://www.markdownguide.org/cheat-sheet/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).

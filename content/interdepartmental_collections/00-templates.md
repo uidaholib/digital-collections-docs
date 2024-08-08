@@ -4,7 +4,9 @@ nav_order: 8
 title: Collection Templates
 ---
 
-This guide is intended as a reference for U of I faculty outside of the CDIL (Special Collections, Fellowships, etc). Before following this guide, you will need to [install all of the items specified in the  software](https://collectionbuilder.github.io/cb-docs/docs/software/) section of our main CB docs, including creating a GitHub account and installing a Visual Studio Code.
+*This guide is intended as a reference for U of I faculty outside of the CDIL (Special Collections, Fellowships, etc).*
+
+Before proceeding through these steps, you will first need to [install all of the items specified in the  software](https://collectionbuilder.github.io/cb-docs/docs/software/) section of our main CB docs, including creating a GitHub account and installing a Visual Studio Code.
  
 Most U of I digital collections are generated from one of our digital collection templates. These templates are based on [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv), but contain customizations and branding specific to the U of I Library. Using the templates allows us to more easily manage consistent look and feel, branding, and updates across collections, while still allowing customization and unique content.
 
@@ -20,7 +22,7 @@ Current templates are divided into a set of content specific groups:
 
 ## Create A Branch
 
-Once you’ve identified the correct template, open the link to its GitHub page and click the green “Code” button and select “Open with Github Desktop.” This application should prompt you to clone the repository. Once accepted, you will need to create a  branch.
+Once you’ve identified the correct template, open the link to its GitHub page and click the green `Code` button and select `Open with Github Desktop.` This application should prompt you to clone the repository. Once accepted, you will need to create a branch.
 
 ## Naming Conventions
 
@@ -28,5 +30,4 @@ This is where we need to start thinking about metadata. For ease of organization
 
 ## Visual Studio Code
 
-Once this branch has been created from the `Main`, select the publish tab and then select “Open in Visual Studio Code.” Within VSC, you will be working within the terminal (ctrl+shft+`) within the “shell” of bash (as opposed to PowerShell, Python, etc). To make your default terminal bash, search “integrated shell” in the command palette at the top and select the box for Terminal > Integrated > Shell Integration: Enabled. You should be ready to go!
-
+Once this branch has been created from the `Main`, select the publish tab and then select `Open in Visual Studio Code.` Within VSC, you will be working within the terminal (ctrl+shft+`) within the “shell” of bash (as opposed to PowerShell, Python, etc). To make your default terminal bash, search `integrated shell` in the command palette at the top and select the box for "Terminal > Integrated > Shell Integration: Enabled." 

@@ -10,7 +10,7 @@ While this is still an element of the final process, we have implemented a few t
 
 ## Text Mining
 
-Tags are generated from a text mining tool that was made in-house by the Digital Scholarship and Open Strategies department, which searches across all transcripts in a given oral history collection for words relating to specific categories, such as *“factory”*, *“shift”*, *“union”* for **labor** and *"white-collar"*, *"joblessness"*, *"layoff"* for **economics**
+Tags are generated from a text mining tool made in-house by the Digital Scholarship and Open Strategies department, which searches across all transcripts in a given oral history collection for words relating to specific categories, such as *“factory”*, *“shift”*, *“union”* for **labor** and *"white-collar"*, *"joblessness"*, *"layoff"* for **economics**
 
 {% include figure.html img="transcription_guide_images01.png" alt="Screen capture of Visual Studio Code and code" caption="A snippet of code from the text mining tool seen in Visual Studio Code showing the terms for labor and education" %}
 
@@ -22,4 +22,4 @@ Using the Google Sheets `Apps Script` extension, you will then deploy a code whi
 
 - Add or remove tags in the Names Locations Tags spreadsheet as needed and the same changes will apply to all of the transcriptions we are working on in that collection
 - As a transcriber, you can create entirely new tags and their associated words
-- All of the tags will have consistent spelling and data will be more detailed
+- All of the tags will have consistent spelling and data should be more detailed

@@ -6,7 +6,7 @@ title: Metadata and Object Prep
 
 ## Metadata
 
-Follow [this guide](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/) on our full CB docs to understand all of the metadata categories and their meaning. For ease of exporting, please create and share this spreadsheet in Google Sheets, as CB requires UTF-8 encoding, which is the default export setting on that platform. 
+Follow [this guide](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/) on our full CB docs to understand all of the metadata categories and their meanings. For ease of exporting, please create and share this spreadsheet in Google Sheets, as CB requires UTF-8 encoding, which is the default export setting on that platform. 
 
 Object location paths metadata fields should always adhere to the following format:
 
@@ -23,6 +23,6 @@ To prepare the objects, please make sure all of the filenames align with the spr
 
 ## Transfer
 
-Please share the link to the completed Google Sheet and Google (or Sharepoint) folder with our Digital Projects Manager or Digital Initiatives Librarian and they will handle the task of:
+Please share the link to the completed Google Sheet and Google (or Sharepoint) folder with our Digital Projects Manager or Digital Initiatives Librarian, who will handle the task of:
 - Creating derivatives of these objects and
 - Uploading these objects onto our server

@@ -4,7 +4,7 @@ nav_order: 4
 title: Code
 ---
 
-When you open the spreadsheet with your transcript, you are going to go to the `Extensions` tab and then open `Apps Script`, which will pop out in its own window. Select all of the sample code in the terminal and replace with the following (`updated to include tags beside punctuation and plural versions 07/09/2024`):
+When you open the spreadsheet with your transcript, you are going to go to the `Extensions` tab and then open `Apps Script`, which will pop out in its own window. Select all of the sample code in the terminal and replace with the following (`updated 07/09/2024`):
 
 
 ```

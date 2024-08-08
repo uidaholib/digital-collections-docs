@@ -13,4 +13,4 @@ We copy edit transcriptions to identify errors, which occur most frequently in t
 
 ## Sensitive Content
 
-If you are working with an oral history that contains content that some may find offensive, let us know so we can have a conversation about possibly flagging this material but please do not make changes to the transcript language.
+If you are working with an oral history that contains content that some may find offensive, let us know so we can have a conversation about possibly flagging this material but please *do not make changes to the transcript language*.
