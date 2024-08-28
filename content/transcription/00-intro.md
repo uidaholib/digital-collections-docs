@@ -1,10 +1,10 @@
 ---
 section_id: Transcription
-nav_order: 4
+nav_order: 7
 title: Introduction
 ---
 
-*This guide is intended for student workers, fellowship recipients or anyone working with the CDIL on oral history projects.*
+*This guide is intended for student workers, fellowships, or anyone working with the CDIL on oral history projects.*
 
 The CSV transcriptions that you are reviewing have been processed through Adobe Premiere Pro, which we’ve found is the most accurate of the software available to us and can be exported directly in the format we need. That said, **it isn’t perfect** and that is where we can use your help!
 

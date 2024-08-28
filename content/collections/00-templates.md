@@ -1,13 +1,9 @@
 ---
-section_id: Interdepartmental Collections
-nav_order: 8
+section: Creating Collections
+nav_order: 0
 title: Collection Templates
 ---
 
-*This guide is intended as a reference for U of I faculty outside of the CDIL (Special Collections, Fellowships, etc).*
-
-Before proceeding through these steps, you will first need to [install all of the items specified in the  software](https://collectionbuilder.github.io/cb-docs/docs/software/) section of our main CB docs, including creating a GitHub account and installing a Visual Studio Code.
- 
 Most U of I digital collections are generated from one of our digital collection templates. These templates are based on [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv), but contain customizations and branding specific to the U of I Library. Using the templates allows us to more easily manage consistent look and feel, branding, and updates across collections, while still allowing customization and unique content.
 
 ## Find the Appropriate Template

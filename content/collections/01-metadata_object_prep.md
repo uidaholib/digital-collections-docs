@@ -1,5 +1,5 @@
 ---
-section: Interdepartmental Collections
+section: Creating Collections
 nav_order: 1
 title: Metadata and Object Prep
 ---

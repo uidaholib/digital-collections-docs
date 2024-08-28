@@ -1,5 +1,5 @@
 ---
-section: Legacy Documentation
+section: Maintainers
 nav_order: 1
 title: Merging Main into Branch
 ---

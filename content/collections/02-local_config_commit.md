@@ -1,5 +1,5 @@
 ---
-section: Interdepartmental Collections
+section: Creating Collections
 nav_order: 2
 title: Developing Locally, Configuration and Committing
 ---
