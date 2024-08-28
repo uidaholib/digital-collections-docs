@@ -197,7 +197,7 @@ General notes:
 - Common options include:
     - **In Copyright - Educational Use Permitted**: `http://rightsstatements.org/vocab/InC-EDU/1.0/`
     - **No Copyright**: `http://rightsstatements.org/vocab/NoC-US/1.0/`
-- Only use the URI value (starts with `http`, does not include `/page/` or `?language=en`), *not* the words "Educational Use Permitted".
+- Only use the URI value (starts with `http`, does not include `/page/` or `?language=en`, i.e. not the address from your browser bar), *not* the words "Educational Use Permitted".
 - For additional options not shown above, see [rightsstatements.org](https://rightsstatements.org/en/).
 - Example value: `http://rightsstatements.org/vocab/NoC-US/1.0/`
 
