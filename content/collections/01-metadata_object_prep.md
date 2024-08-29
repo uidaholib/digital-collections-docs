@@ -33,8 +33,8 @@ From Google Sheets or OpenRefine, export a CSV version of your metadata and rena
 
 ## Transfer 
 
-Share the completed folder of objects and metadata to the CDIL staff via shared drive.
-CDIL staff will:
+Share the completed folder of objects and metadata to the CDIL team via shared drive, and submit the information using the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
+The CDIL team will:
 
 - QC objects
 - [Generate derivatives](https://collectionbuilder.github.io/cb-docs/docs/objects/derivatives/#generate-derivatives-rake-task) using `rake generate_derivatives`

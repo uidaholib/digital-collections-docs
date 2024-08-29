@@ -13,4 +13,4 @@ To fix metadata or content in existing collections.
 3. For minor metadata edits and fixes, directly edit the metadata CSV in VS Code. 
 4. For major metadata edits, import the CSV into Sheets, edit, then download as CSV and replace. 
 5. Test on local machine.
-6. Notify CDIL team via [Collection Update Form](https://uidaho.co1.qualtrics.com/jfe/form/SV_eRuiZXzEVFKGGF0) to publish to live web.
+6. Notify CDIL team via [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ) to publish to live web.

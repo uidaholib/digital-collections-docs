@@ -15,7 +15,7 @@ Do not hesitate to reach out for help debugging issues!
 
 ## Publish
 
-Once the collection is ready, submit it to the CDIL team via the [Collection Update Form](https://uidaho.co1.qualtrics.com/jfe/form/SV_eRuiZXzEVFKGGF0).
+Once the collection is ready, submit it to the CDIL team via the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
 
 The Digital Projects Manager and Digital Initiatives Librarian will prep it for final publication:
 
