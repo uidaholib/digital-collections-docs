@@ -1,6 +1,6 @@
 ---
 section: Creating Collections
-nav_order: 0
+nav_order: 2
 title: Setup
 ---
 
