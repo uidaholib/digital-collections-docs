@@ -1,6 +1,6 @@
 ---
 section: Creating Collections
-nav_order: 2
+nav_order: 3
 title: Developing Locally, Configuration and Committing
 ---
 
