@@ -1,5 +1,5 @@
 ---
-nav_order: 6
+nav_order: 3
 title: Lab Equipment
 ---
 
@@ -21,5 +21,3 @@ An overview of the scanning equipment used in the CDIL.
 {% endfor %}
 </tbody>
 </table>
-
-{% include template/credits.html %}

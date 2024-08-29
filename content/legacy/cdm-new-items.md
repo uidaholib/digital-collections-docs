@@ -1,6 +1,6 @@
 ---
-section: Collection Creation
-nav_order: 4
+section: Legacy Documentation
+nav_order: 1
 title: CB-CDM Update
 ---
 

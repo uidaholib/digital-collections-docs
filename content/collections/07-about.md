@@ -1,12 +1,12 @@
 ---
-section: Collection Creation
-nav_order: 5
-title: About Page
+section: Creating Collections
+nav_order: 7
+title: About Pages
 ---
 
 Collection About Pages are written in Markdown.
 Below are notes on formatting your page.
-For more basic information on how Markdown works and general formatting see the [Learn-Static Intro to Markdown](https://www.markdownguide.org/cheat-sheet/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+For more basic information on how Markdown works and general formatting see [Write Markdown Everywhere](https://evanwill.github.io/markdown-everywhere/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 ## Citations
 
@@ -28,7 +28,7 @@ Then, at the very bottom of the page, you'll create a section with the heading `
 On the front end, your footnote number will automatically link down to its corresponding citation, which will reside at the "foot" of your essay.
 To see this in action, look at the cited text below, and click on the blue `1` and `2` footnotes at the end of each line.
 
----
+------
 
 ## Hyperlinks
 
@@ -57,21 +57,7 @@ Here's another example:
 
 `[stage]({{ '/items/priestlake244.html' | relative_url }})`
 
-### Open a link in a new browser tab
-
-You've probably noticed that hyperlinks created this way cause a new website to open in your browser's *current tab*.
-Sometimes this is what you want to happen, but there will be other times where you'd like a link to open in a *new browser tab* when a user clicks on it.
-To make this happen, you'll need to copy and paste the snippet of text below to the *end* of your hyperlink parentheses:
-
-Copy this: `{:target="_blank" rel="noopener"}`
-
-And paste it *after* the parentheses in your hyperlink: 
-
-`[GitHub Help](https://help.github.com/){:target="_blank" rel="noopener"}`
-
-This will ensure that your link opens in a new tab, like this: [GitHub Help](https://help.github.com/)
-
----
+------
 
 ## Perma.cc
 
@@ -85,7 +71,7 @@ Add the archived Perma.cc link to your citations like this:
 
 `Becky Kramer, "Pre-Dam Photos May Be Glimpse of Future," The Spokesman-Review, March 30, 2009, https://www.spokesman.com/stories/2009/mar/30/pre-dam-photos-may-be-glimpse-of-future/. (Archived: https://perma.cc/LN7F-Q2CW)`
 
----
+------
 
 ## Horizontal Line Breaks
 
@@ -93,16 +79,17 @@ Sometimes you may want to add greater distinction between sections of your essay
 You can do this by adding a "horizontal line break," which is a horizontal line that stretches across the width of the page.
 
 Horizontal line breaks are easy to do in Markdown.
-Simply add three hyphens in a row to a new line, and make sure the line with the hyphens is preceded and followed by blank lines, like this:
+Simply add at least three hyphens in a row to a new line (6 is preferred), and make sure the line with the hyphens is preceded and followed by blank lines, like this:
 
 ```
 
----
+------
+
 ```
 
 On the front end, a horizontal line break will look like this:
 
----
+------
 
 ## Table of contents
 

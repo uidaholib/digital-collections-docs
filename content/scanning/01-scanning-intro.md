@@ -1,6 +1,6 @@
 ---
 section_id: Scanning
-nav_order: 1
+nav_order: 4
 title: Intro to Scanning
 ---
 

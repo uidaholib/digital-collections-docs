@@ -1,12 +1,11 @@
 ---
-nav_order: 7
+nav_order: 2
 title: Digital Collections Team
 ---
 
 The University of Idaho Library Digital Collections Team works to determine policy and workflows for the production and publishing of digital collections to produce a consistent, engaging user experience for patrons across the library's web platforms and discovery services and to encourage ownership of digital collections and investment in their excellence across the library. 
-For more information about our current objectives, see the [Digital Collections Team Document](https://vandalsuidaho.sharepoint.com/:w:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Team%20Documents/Digital%20Collections%20Team%202023-24.docx?d=w97f7aa5cf86740f0920d7b74eeb9fe39&csf=1&web=1&e=FvDNz0){:.target="_blank" rel="noopener"}.
 
-The team meets once a month to communicate updates on collections and determine next steps.
+The team meets to communicate updates on collections and determine next steps.
 Interspersed between team meetings are training sessions on various archival and digital topics.
 Links to team documents are located below.
 
