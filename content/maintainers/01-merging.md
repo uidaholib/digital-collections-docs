@@ -4,6 +4,8 @@ nav_order: 1
 title: Merging Main into Branch
 ---
 
+**needs revision**
+
 ## Update main!
 
 First, always make sure your `main` branch is up-to-date, do a `git pull` on main.
