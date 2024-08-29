@@ -27,6 +27,7 @@ To be able to develop and test a collection on your local computer you will need
 To generate image derivatives you will need ImageMagick and GhostScript (not all DC team members will need to do this!).
 
 Please follow the [software install instructions on cb-docs](https://collectionbuilder.github.io/cb-docs/docs/software/).
+Pay attention to configuring VS Code to avoid issues later!
 
 | Software | Process |
 | --- | --- |
