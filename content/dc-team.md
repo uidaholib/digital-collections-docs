@@ -14,9 +14,7 @@ Links to team documents are located below.
 
 ## Documents
 
-{% include button.html text="Meeting Notes Folder" link="https://vandalsuidaho.sharepoint.com/:f:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team/2023-2024?csf=1&web=1&e=3ehcyd" color="primary" %}
-
-{% include button.html text="DC Team Sharepoint Folder" link="https://vandalsuidaho.sharepoint.com/:f:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team?csf=1&web=1&e=dmJkod" color="primary" %}
+{% include button.html text="DC Team Sharepoint Folder" link="https://vandalsuidaho.sharepoint.com/:f:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team?csf=1&web=1&e=okBkwr" color="primary" %}
 
 </div>
 <div class="col-md-4 px-2" markdown="1">
