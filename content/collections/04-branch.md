@@ -13,6 +13,7 @@ To work on your local machine, you will need to have a copy of the repository "c
 This only has to be done once for each repository, so if you already have a copy, you don't need to do it again--skip this step! 
 
 Visit the GitHub link for the template you will be using, then follow the [clone repository steps in cb-docs](https://collectionbuilder.github.io/cb-docs/docs/repository/clone/).
+**Important: when it gives you the option of where to save your repositories, it will default to a OneDrive folder--click the Browse option and navigate in your file explore to a non-onedrive location, such as This PC > C: > Users > yourusername > Documents.**
 
 ## Create a New Branch
 
