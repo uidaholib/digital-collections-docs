@@ -40,13 +40,3 @@ The templates are hosted on GitHub for collaboration and version control.
 However, the digital collection websites and digital objects are not hosted on GitHub.
 Each collection is built manually using Jekyll and deployed to our main static web server. 
 All digital objects (images, pdfs, etc) are hosted on our libobjects server.
-
-## Retired Templates
-
-These are for reference only:
-
-- [digital-collections-template-cb-csv](https://github.com/uidaholib/digital-collections-template-cb-csv) - transition CB-CSV project, migrated.
-- [collectionbuilder-cdm-template](https://github.com/uidaholib/collectionbuilder-cdm-template) - CONTENTdm collections, migrated.
-- [collectionbuilder-csv-template](https://github.com/uidaholib/collectionbuilder-csv-template) - out of date CB-CSV
-- [collectionbuilder-sa-spec-exhibits](https://github.com/uidaholib/collectionbuilder-sa-spec-exhibits) - defunct, migrated.
-- [collectionbuilder-csv-spec-exhibits](https://github.com/uidaholib/collectionbuilder-csv-spec-exhibits) - defunct, migrated.

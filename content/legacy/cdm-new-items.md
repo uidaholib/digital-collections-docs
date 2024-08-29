@@ -1,6 +1,6 @@
 ---
-section_id: Legacy Documentation
-nav_order: 11
+section: Legacy Documentation
+nav_order: 1
 title: CB-CDM Update
 ---
 
