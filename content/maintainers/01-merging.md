@@ -4,25 +4,38 @@ nav_order: 1
 title: Merging Main into Branch
 ---
 
-**needs revision**
+The `main` branch of our templates receives updates from CB-CSV and our customizations and fixes. 
+These do not automatically get added to collection branches.
+Whenever working on a collection (adding content, fixing issues), it is best to first pull in any updates from `main`.
+
+To update a collection you will have to "merge" the `main` into the collection branch.
+Note that this is the opposite of typical git workflows, so GitHub tends to not be very helpful with auto suggestions for this process!
 
 ## Update main!
 
-First, always make sure your `main` branch is up-to-date, do a `git pull` on main.
+First, always make sure your `main` branch is up-to-date, switch to `main` and do a `git pull`.
 
 ## Select a branch to update
 
-1. In GitHub Desktop, find the branch you want to update and switch to it.
-2. Also do a `fetch` and `git pull` to update this branch with any remote changes.
+1. In GitHub Desktop (or VS Code), find the branch you want to update and switch to it.
+2. Do a `fetch` and `git pull` to update this branch with any remote changes.
 
 ## Merge main branch into the branch you've selected
 
-1. In the Branches dropdown on GitHub Desktop, click the bottom button that says "Choose a branch to merge into [whatever branch you're on]," and choose the "main" branch. Once you select "main," the merge will begin.
-2. In most cases, there will be conflicting files, and you'll need to click a button that accepts this to continue the merge.
+- GitHub Desktop:
+    1. In the Branches dropdown on GitHub Desktop, click the bottom button that says "Choose a branch to merge into [whatever branch you're on]," and choose the "main" branch. Once you select "main," the merge will begin.
+    2. In some cases there will be conflicting files, and you'll need to click a button that accepts this to continue the merge.
+- Command line:
+    1. in VS Code terminal ensure you are on the correct branch `git status`
+    2. type `git merge main`
+    3. *If there are no conflicts*, merge message will pop up, type Ctrl+X to save default message. If there are conflict, merge will stop and you will have to resolve the conflicts first (edit them in VS Code), then complete the merge commit.
 
 ## Sort out merge conflicts
 
+**needs revision** 
+
 GitHub Desktop will list the conflicts you need to resolve before the merge can be committed. To resolve them: 
+
 1. Open the project in VS Code and locate and open a file that GitHub desktop says needs to be resolved. 
 2. Scroll down in that file until you see the specific conflict area(s) highlighted, including the old and new content that conflicts. Git directly marks the conflicts in the text file by adding a pattern:
     - The top of the conflict has `<<<<<<< HEAD` on its own line, followed by the content in the old version of the file. 
@@ -36,24 +49,10 @@ GitHub Desktop will list the conflicts you need to resolve before the merge can 
 6. Remember that you can always click on the files you edited in the Changes column of VS Code to see the git diff visualized, so you can review the changes to make sure they are correct.
 7. After you've sorted out all the conflicts, you can either make a commit or move onto the changes below, whichever makes the most sense to you. If there are a lot of files that were changed in the merge, it might make more sense to commit at this point, since you'll be changing more in the steps below and it may be hard to keep track of your changes.
 
-## Delete extra files from _data folder
-
-If the following files exist in _data, delete them (unless one of them is actually the metadata for the branch!).
-- browse-config.csv
-- digital.csv
-- map-config.csv
-- metadata-config.csv
-- nav-configuration.csv
-- table-config.csv
-- boxing.csv
-- cities.csv
-- dworshak.csv
-- psychiana.csv
-
 ## General
 
-1. Serve the site using the `jekyll s` command (for cb-cdm-template) or `bundle exec jekyll s` command (for cb-csv-template).
-2. Do a general overview of the site.
+1. Serve the site using `bundle exec jekyll s`
+2. Click around to test out the site and ensure everything is still working.
 3. On the **browse page** and **item pages**, make sure there are no broken links, images not showing up, etc. (if you see something amiss, fix it!)
     - Check the config-metadata.csv in the _data folder (remember, this controls what metadata shows up on the collection's item pages) and compare it with the collection's metadata spreadsheet. Are there any fields you think should be added to the metadata displaying on the collection's item pages? If so, add them to the config-metadata.csv. Make sure any field with browse_link = `true` in the config-metadata.csv is also included on the browse cards, using the config-browse.csv, since the browse links won't work properly if the fields aren't included on the browse cards. 
 4. Check to see if the **map** is properly centered and if the **word clouds** make sense.
@@ -62,70 +61,24 @@ If the following files exist in _data, delete them (unless one of them is actual
 
 ## About Pages
 
-1. Sometimes, there may be two About pages in the repository (one in the base of the repo and one in the pages folder). The correct about page should be in the pages folder. If there are two About pages, check the content of each and make sure the one in the pages folder is the most up to date. After you've ensured that no information is missing, delete the about.md file at the root of the repository, but leave the one in the pages folder.
-2. Check the About page for content and format, cleaning up and making edits as you see fit.
+1. Check the About page for content and format, cleaning up and making edits as you see fit, following guidelines on [About Pages docs]({{ '/content/collections/07-about.html' | relative_url }}).
     - In particular, keep an eye out for hyperlinked text that says something like "click here." When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
-3. Check citations to see if they are in the correct format. If not, use [Citation Instructions](https://github.com/uidaholib/collectionbuilder-csv-template/blob/main/docs/about_markdown.md) to reformat.
-4. If you use the "float" option in the feature/image include, make sure to include the code `<div class="clearfix"></div>` at the bottom of about.md. This makes sure the layout of the About page works correctly on mobile devices. So if you see `<div class="clearfix"></div>` already in this file, just leave it there.
-5. Change any full links to pages within the collection to use relative_url. Anytime you see https://www.lib.uidaho.edu written out in an About page you should think about changing it to the liquid relative_url formula:
-
-Before:
-
-`[family](https://www.lib.uidaho.edu/digital/priestlake/browse.html#families)`
-
-After:
-
-`[family]({{ '/browse.html#families' | relative_url }})`
-
-Here's another example:
-
-Before:
-
-`[stage](https://www.lib.uidaho.edu/digital/priestlake/items/priestlake244.html)`
-
-After:
-
-`[stage]({{ '/items/priestlake244.html' | relative_url }})`
-
-6. Consider whether a link should open in a new tab (particularly useful for links to external sites, but not required). Here's the code to add to the end of a liquid link if you want the link to open in a new tab:
-
-`{:target="_blank" rel="noopener"}`
-
-Example:
-
-`[family]({{ '/browse.html#families' | relative_url }}){:target="_blank" rel="noopener"}`
-
-## Library Logos
-
-UI library logos replace the Digital Initiatives logo buttons in the top right on non-home pages, and in the mobile nav.
-The links for these buttons no longer trigger the all-collections modal.
-Instead, the top right logo on the home page links to <https://www.lib.uidaho.edu/>, and the top right logo on the other site pages links back to <https://www.lib.uidaho.edu/digital/>.
-Edits to these logos will appear in `collection-banner.html` and `collection-nav.html` files, in the _includes folder.
+    - Check citations to see if they are in the correct format.
+    - Change any full links to pages within the collection to use relative_url. 
+    - Consider whether a link should open in a new tab. In the past we regularly used `{:target="_blank" rel="noopener"}`. However, best practices now suggest never opting in a new tab, so they should likely be removed.
 
 ## Metadata
 
 ### Edit current metadata in Google Sheets
 
 1. Import the collection's metadata csv into google sheets to edit.
-2. In most cases, if any column is empty, you can delete that column. If you're not sure, let Olivia know to check it out.
+2. In most cases, if any column is empty, you can delete that column. 
 3. Rename the `reference url` field `cdm_url`
 4. Make sure that the column with the URLs to the copyright statements is titled `rightsstatement` (it might say `rights information` or `rights (standardized)`). Change it so it is titled `rightsstatement`.
 5. Rename `image/jpg` values to `image/jpeg`
-6. Do a general overview to make sure the metadata looks good. If it seems like there could be lat/long values added, make a note in the klytie_updates column of the digital_all_collections spreadsheet.
+6. Do a general overview to make sure the metadata looks good. If you notice any potential projects, make a note in the collections updates spreadsheet for future work.
 7. Export the spreadsheet from google sheets as a csv, and upload to the repository, replacing the old metadata spreadsheet.
-
-### Additional metadata edits in VS Code
-
-1. After you've completed your edits in Google Sheets and downloaded the metadata as a CSV, rename the file to whatever the metadata file's name currently is, and drag it back into the _data folder in VS Code. VS Code will as you if you want to replace the current file, since they have the same name. Say Yes, you do want to replace it.
-2. Run `jekyll s` to serve the site locally.
-3. Open the updated metadata CSV in VS Code. Make sure all field names are lowercase. If they aren't, use this shortcut: highlight the first row of fieldnames and select ctrl + shift + p, select the "transform to lowercase" option.
-4. Open the theme.yml file and navigate to the data section. Copy the first row in the metadata CSV (the row with all the metadata field names), and paste it in between the quotation marks in the value for the `metadata-export-fields` variable, replacing the current values. Remove any metadata fields that you don't feel should be in the export file.
-5. Also in the data section of the theme.yml file, check the values for the `metadata-facets-fields` fields (sometimes it's easier to view this in the browser, by clicking on the "facets json" button at the bottom of the homepage). Determine if there should be other metadata fields added to this list (the fields added should have values that occur more than once across the collection items. Subject will almost always be there, but other common ones might be location, creator, etc.).
-
-### Check metadata export
-
-1. Find and open metadata.csv and metadata.json in _site/data folder.
-2. Check to make sure the following fields exist in these files and their values look correct: `object_thumb`, `object_download`, `reference_url` (you can also do this after you run `rake deploy` in the steps below)
+8. If you changed any field names, check "theme.yml" and the config- csv files to ensure things still line up.
 
 ## Commit and push your changes
 
@@ -134,11 +87,10 @@ Use VS Code and/or GitHub Desktop to commit and push your changes up to GitHub.
 ## Update the live site
 
 1. Stop the jekyll server (`ctrl` + `c`) and run the command `rake deploy`. This might take a few seconds to generate, depending on how big the collection is. When you see a "done" message in the terminal, this process is finished and you can move to the next step.
-2. Locate the collectionbuilder-cdm-template repository in your file explorer and navigate to the `_site` folder (you can also easily do this from VS Code by right clicking the `_site` folder and selecting "Reveal in File Explorer"). (Note: **you *must* be sure to only copy files from the _site folder**. Files outside of this folder will not be configured correctly for our server, and you'll notice right away that the site does not work.)
-3. Leaving this file explorer window open, proceed to open another file explorer window. In this one, select the `Websites (W:)` drive. Select www-lib-uidaho-edu > Content > Digital > the collection folder you want to update (in most cases, this folder name will match the branch name. If you don't see this folder name, check the record for the collection in the digital_all_collections spreadsheet, and look at the value for cdmid. If the folder name is not the cb_cdm_branch value, it should be the cdmid value, but this is rare.).
-4. Carefully copy and paste the content from your repository folder into the collection folder. As soon as you copy these files over, they will be live.
-    - Note: if you're nervous to copy over the current files, you can always first copy the current files to an empty folder on your computer, then copy over the edited files to the server, check to make sure they look correct, and delete the old files that you temporarily moved to an empty folder.
-5. Check the live site to make sure everything looks correct. If it doesn't, make sure that you copied from the _site folder of the repository. If you did and it still looks wrong, let Olivia know.
+2. Locate the template repository in your file explorer and navigate to the `_site` folder (you can also easily do this from VS Code by right clicking the `_site` folder and selecting "Reveal in File Explorer"). (Note: **you *must* be sure to only copy files from the _site folder**. Files outside of this folder will not be configured correctly for our server, and you'll notice right away that the site does not work.)
+3. Leaving this file explorer window open, proceed to open another file explorer window. In this one, select the `Websites (W:)` drive. Select www-lib-uidaho-edu > Content > digital > the collection folder you want to update (in most cases, this folder name will match the branch name. If you don't see this folder name, check the record for the collection in the digital_all_collections spreadsheet).
+4. Carefully copy and paste the content from your repository "_site" folder into the collection folder. As soon as you copy these files over, they will be live. (Ctrl+A = select all; Ctrl + C = copy; Ctrl + V = paste)
+5. Check the live site *in a private window or incognito window* to make sure everything looks correct. Click around to test the site.
 
 ## Update the digital_all_collections spreadsheet
 
