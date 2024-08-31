@@ -70,3 +70,7 @@ If you are adding to archive drive, ensure the folder has:
 - a README.md or README.txt with information about the collection.
 - metadata
 - all original files
+
+### Clean up your local
+
+After you have transferred all the files successfully to libobjects and archive drive, you can delete the copy you have on your local machine.
