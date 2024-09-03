@@ -38,3 +38,12 @@ Pay attention to configuring VS Code to avoid issues later!
 | ImageMagick, GhostScript | Generate image derivatives |
 | OpenRefine | Bulk transform and improve metadata |
 {:.table .table-bordered}
+
+## Check Commandline software
+
+Open "Git Bash" (on windows) or terminal.
+Typing the commands below should give you a version number if they are installed correctly:
+
+- `ruby -v`
+- `jekyll -v`
+- `magick --version`
