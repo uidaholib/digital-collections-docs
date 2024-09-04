@@ -73,6 +73,8 @@ General notes:
 - A detailed, 1-3 sentence accounting of the item, communicating what it is and its contents.
 - This includes small details such as "mountains can be seen in the background", and should include names when known. 
 - All descriptions should be in complete sentences, with a single space between sentences. Descriptions should be no more than 1-3 sentences.
+- If the item is an image that includes text, ensure the description includes a transcription of the text. e.g. `Text on the image reads: ...`
+- Please note: description is used as the default "alt" text for images, so should convey the content of the image. If a more targeted alt text would function better, please use the "image_alt_text" field.
 - Example value: `Students on lawn in front of old Gault Hall, which was torn down in 2003 to make room for the current Living Learning Center.`
 
 ### subject
