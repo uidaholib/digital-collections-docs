@@ -17,9 +17,12 @@ Do not hesitate to reach out for help debugging issues!
 
 Once the collection is ready, submit it to the CDIL team via the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
 
-The Digital Projects Manager and Digital Initiatives Librarian will prep it for final publication:
+The Digital Projects Manager and Digital Initiatives Librarian will prep it for publication:
 
-- Check over the branch code.
-- Merge any updates from `main` if necessary.
+- [Merge any updates from main]({{ '/content/maintainers/merging.html' | relative_url }}) if necessary.
+- QC metadata fields, config files, about page, and any customizations.
+- Ensure ["config-search-index.csv" is correctly configured]({{ '/content/maintainers/search.html' | relative_url }}).
+- Test locally.
+- Build and deploy to live web location.
 - Send collection to DC QC process.
 - Guide collection into launch checklist.
