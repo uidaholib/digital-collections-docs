@@ -44,7 +44,7 @@ General notes:
 - If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
     - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in YYYY-YYYY format (in this case, 1950-1960) in the 'archival_date' cell in this situation, but do not put the range in the "date" column.
 - If you do not know the date and cannot estimate it, leave this field blank.
-- The "date" field is intended to be sortable and machine readable in order that items can be put on a timeline or sorted--so having it strictly in ISO format is important!
+- The "date" field is intended to be sortable and machine readable in order that items can be put on a timeline or sorted--so having it strictly in ISO format is important! No slashes or ranges!
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
 ### archival_date
@@ -73,8 +73,8 @@ General notes:
 - A detailed, 1-3 sentence accounting of the item, communicating what it is and its contents.
 - This includes small details such as "mountains can be seen in the background", and should include names when known. 
 - All descriptions should be in complete sentences, with a single space between sentences. Descriptions should be no more than 1-3 sentences.
-- If the item is an image that includes text, ensure the description includes a transcription of the text. e.g. `Text on the image reads: ...`
-- Please note: description is used as the default "alt" text for images, so should convey the content of the image. If a more targeted alt text would function better, please use the "image_alt_text" field.
+- If the item is an image that includes text, ensure the description includes a transcription of the text in context. e.g. `Text on the image reads: ...`
+- Please note: description is used as the default "alt" text for images, so should convey the content of the image. If a more targeted alt text would function better for that purpose, please use the "image_alt_text" field.
 - Example value: `Students on lawn in front of old Gault Hall, which was torn down in 2003 to make room for the current Living Learning Center.`
 
 ### subject
@@ -137,7 +137,6 @@ General notes:
     - `InteractiveResource`: Webpage, VR environment
     - `Software`: Computer program
 - You may only choose one value for the type field. If you encounter an item with multiple types of content, choose the option that describes the item best.
-- At minimum, the input should contain a value chosen from the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2003-02-12/).
 - Example values: `Image;StillImage`; `Image;MovingImage`; `Text`; `Sound`
 
 ### format_original
@@ -209,7 +208,6 @@ General notes:
 
 ### filename
 
-- *required*  
 - The value must exactly match the actual filename, including capitalization and extension. This value is case-sensitive!
 - Generally, the filenames will be based on the identifier PLUS extension (.jpg, .tif, .pdf, .wav, etc.)
 - Our digital content management system uses this field to correctly link the digitized item to the corresponding metadata entry. 
@@ -223,6 +221,7 @@ General notes:
 ## Technical Fields
 
 These fields are used for CollectionBuilder.
+They can generally be filled out by CDIL team after metadata creation.
 
 ### display_template
 
@@ -239,8 +238,8 @@ These fields are used for CollectionBuilder.
 ### date_is_approximate 
 
 - **legacy only, don't use for new collections**
-- This field lets anyone looking at the collection know that we are certain of our estimation, not that our estimation is the accurate date.
-- Only fill out 'yes' if the Year, Year-Month, or an actual estimation is provided. If date is accurate, leave blank.
+- This field lets anyone looking at the collection know that the value in "date" is an estimation only.
+- Only fill out 'yes' if the value in "date" field is an estimation. If date is accurate, leave blank.
 - Example value: `yes`
 
 ### relation
