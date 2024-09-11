@@ -7,6 +7,8 @@ title: About Pages
 Collection About pages should describe the context of the collection content, where the material comes from, and any background on the project.
 They can cite sources, explain content details (such as extent or missing items), and acknowledge contributors.
 
+Writing for the web is different from traditional documents--please use short paragraphs and plenty of headers to facilitated reading.
+
 Collection About Pages are written in Markdown.
 Below are notes on formatting your page.
 For more basic information on how Markdown works and general formatting see [Write Markdown Everywhere](https://evanwill.github.io/markdown-everywhere/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
