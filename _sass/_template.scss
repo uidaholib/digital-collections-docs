@@ -13,8 +13,6 @@ body {
         }
     }
 }
-/* remove link underline */ 
-a { text-decoration: none; }
 
 /* setup header */ 
 @if variable-exists(header-background) {
@@ -61,6 +59,7 @@ a { text-decoration: none; }
             color: #fff;
             border-color: #fff;
         }
+        text-decoration: none;
     }
 }
 
@@ -124,6 +123,7 @@ a { text-decoration: none; }
     color: rgba(0, 0, 0, .75);
     background-color: transparent;
     border: 0;
+    text-decoration: none;
 }
 .side-bar-item:hover, .side-bar-item:focus {
     color: rgba(0, 0, 0, .85);

@@ -30,11 +30,6 @@
 <!-- schema.org JSON-LD -->
 <script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}", "author": { "@type":"Person", "name":"{{ site.author | escape }}"}, "description":"{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}", {% if site.featured-image %}"image": "{{ site.featured-image | absolute_url }}",{% endif %} "url":"{{ page.url | absolute_url }}" }</script>
 
-<!-- connect Google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
 {% if layout.gallery == true or page.gallery == true %}<link rel="stylesheet" href="{{ '/assets/lib/spotlight.min.css' | relative_url }}">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/lib/bootstrap.min.css' | relative_url }}" type="text/css">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
