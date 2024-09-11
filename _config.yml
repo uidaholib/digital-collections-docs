@@ -11,7 +11,7 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: U of I Digital Collections Docs
+title: Digital Collections Docs
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
@@ -43,12 +43,12 @@ content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
 #
 # header-background: 
 # header-text-color: 
-breadcrumbs-background: "#494440;"
+# breadcrumbs-background: 
 # breadcrumbs-text-color: 
-# active-nav-color: 
-# link-color: 
+active-nav-color: "#F1B300;"
+link-color: "#191919;"
 # next-button-color:
-# text-color: 
+text-color: "#111;"
 # base-font-size:
 
 ##########
