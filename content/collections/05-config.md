@@ -36,6 +36,9 @@ If your collection does not contain images, try to find a relevant image in our 
 Finally, please ensure that the placeholder content on the "about.md" file is replaced. 
 Check the [Interpretive Pages cb-docs](https://collectionbuilder.github.io/cb-docs/docs/pages/interpretive/) for more information on editing the file, and our [formatting tips for our conventions]({{ '/content/collections/07-about.html' | relative_url }}).
 
+The About page should describe the context of the collection content, where the material comes from, and any background on the project.
+They can cite sources, explain content details (such as extent or missing items), and acknowledge contributors.
+
 ## README
 
 If a collection is highly customized, has ongoing processes for updates, or other information that should be noted--please create a file following the pattern "README-collectioname.md" at the root of the project. 

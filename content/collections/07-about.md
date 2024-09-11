@@ -4,9 +4,13 @@ nav_order: 7
 title: About Pages
 ---
 
+Collection About pages should describe the context of the collection content, where the material comes from, and any background on the project.
+They can cite sources, explain content details (such as extent or missing items), and acknowledge contributors.
+
 Collection About Pages are written in Markdown.
 Below are notes on formatting your page.
 For more basic information on how Markdown works and general formatting see [Write Markdown Everywhere](https://evanwill.github.io/markdown-everywhere/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+For more details on creating pages in CollectionBuilder, check [cb-docs Edit Site Pages](https://collectionbuilder.github.io/cb-docs/docs/pages/).
 
 ## Citations
 
@@ -130,13 +134,13 @@ If you do incorporate headings, you'll probably find it convenient to make use o
 
 The table of contents is generated from the include that looks like this:
 
-{% raw %}{% include feature/nav-menu.html sections="About CollectionBuilder SA;About the About Page" %}{% endraw %}
+{% raw %}{% include feature/nav-menu.html sections="About CollectionBuilder;About the About Page" %}{% endraw %}
 
 "sections" is followed by an equals sign (`=`) and values separated by semicolons and encased with quotation marks.
 
 The two values inside the quotation marks correspond to headings in the default about.md file:
 
-`## About CollectionBuilder SA`
+`## About CollectionBuilder`
 
 `## About the About Page`
 
