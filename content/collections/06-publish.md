@@ -17,6 +17,8 @@ Do not hesitate to reach out for help debugging issues!
 
 Once the collection is ready, submit it to the CDIL team via the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
 
+[Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ){:.btn .btn-lg .btn-outline-success}
+
 The Digital Projects Manager and Digital Initiatives Librarian will prep it for publication:
 
 - [Merge any updates from main]({{ '/content/maintainers/merging.html' | relative_url }}) if necessary.
