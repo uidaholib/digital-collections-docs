@@ -69,7 +69,7 @@ Here's another example:
 
 Use Perma.cc, a web archiving service, to capture archive copies of web pages that we cite in About pages. This is done to prevent ink rot--broken and incorrect links.
 
-If using Perma.cc for the first time, please refer to this documentation to initially set up a Perma.cc account: [https://evanwill.github.io/web-cites/content/3-perma.html](https://evanwill.github.io/web-cites/content/3-perma.html).
+If using Perma.cc for the first time, check [Evan's workshop for more information about getting started](https://evanwill.github.io/web-cites/content/4-perma.html).
 
 Once logged in, navigate to UI Library DDS > Digital Collection About pages. Select the collection folder you are working on or create a new folder. Then, add your link.
 
