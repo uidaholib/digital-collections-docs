@@ -13,7 +13,7 @@ Pay attention to these options:
 
 - Do not change "url", "source-code", or "digital-assets"
 - Update "baseurl" following the pattern: `/digital/collectionstub`
-- Create a "title", "tagline", "description", and "keywords"
+- Create a "title", "tagline", "description", and "keywords". Please keep in mind that these values will be used in machine markup and data derivatives--use plain text only!
 - Update "metadata" to your CSV's name, which should be the collection stub
 
 ## Preview Locally
