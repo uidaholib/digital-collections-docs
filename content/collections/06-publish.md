@@ -13,6 +13,8 @@ Often, exploring the collection will point out issues in the metadata that you w
 
 Do not hesitate to reach out for help debugging issues! 
 
+{% include alert.html text="Please note, when creating a new collection, it will NOT be in the central search index until final publishing. In the meantime, it will use the static Lunr search." color="info" %}
+
 ## Publish
 
 Once the collection is ready, submit it to the CDIL team via the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
@@ -27,4 +29,5 @@ The Digital Projects Manager and Digital Initiatives Librarian will prep it for 
 - Test locally.
 - Build and deploy to live web location.
 - Send collection to DC QC process.
+- Add to Search Sources, opt into central-search, and redeploy.
 - Guide collection into launch checklist.

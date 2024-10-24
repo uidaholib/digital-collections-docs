@@ -29,7 +29,14 @@ Start your local server and look at the branch code to check over details:
     - "rightsstatement" is a valid URI.
     - "language" is valid 3 letter code.
 - Review config files to ensure metadata is being used correctly.
-- Carefully check ["config-search-index.csv"]({{ '/content/maintainers/search.html' | relative_url }}) to ensure it will get relevant metadata.
+    - "config-browse.csv" includes all fields that have browse links (i.e. from cloud pages or item pages).
+    - "config-metadata.csv" is displaying all relevant fields. Check custom fields.
+    - "config-table.csv" is using meaningful fields.
+    - "theme.yml" has "metadata-export-fields" and "metadata-facets-fields" set.
+- Carefully check ["config-search-index.csv"]({{ '/content/maintainers/search.html' | relative_url }}) to ensure it will get relevant metadata. 
+    - Double check the metadata to confirm these fields follow the standard conventions. Check on full text and no search considerations if necessary.
+    - New collections going into QC process should NOT be in central Search. Leave "_config.yml" `central-search:` blank. However, configuration should be set up and reviewed.
+    - If collection is launched and ready for Search, ensure "_config.yml" has `central-search: true`.
 - Review about page to ensure it exists and has relevant content matching our conventions.
 - Review any customizations to ensure they are functioning as intended (occasionally legacy content is broken!).
 
@@ -44,3 +51,4 @@ Once QC is complete:
 5. Inside the "_site" folder, select all (Ctrl+A) and copy (Ctrl+C).
 6. Inside the collection folder on the server, paste the files (Ctrl+V). Wait for all the files to transfer over.
 7. Open a new private window in your browser and test the collection to ensure everything looks correct.
+8. Check Search Sources to ensure the collection is reindexed if necessary.
