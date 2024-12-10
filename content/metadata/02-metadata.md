@@ -27,6 +27,8 @@ General notes:
 - All words after the first word in the title should be lower case unless referring to a proper noun such as a name or place (Dylan Fuller, Empire State Building, Idaho, etc.)
 - For questions on how to title photographs in a series, please refer to CDIL staff.
 - Example values: `Hecla Mine`; `Students playing baseball`
+- Title can not be blank!
+- Child objects of "multiple" display_template may have a blank title.
 
 ### creator
 
@@ -125,6 +127,7 @@ General notes:
 
 ### type
 
+- *required*
 - This field indicates what type of content the material contains (image, sound, text, etc.) using a one- or two-value input selected from the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2003-02-12/). 
 - Choose from the following options: 
     - `Text`: Any typed or written material (even if it's a photograph of textual material).
@@ -138,6 +141,7 @@ General notes:
     - `Software`: Computer program
 - You may only choose one value for the type field. If you encounter an item with multiple types of content, choose the option that describes the item best.
 - Example values: `Image;StillImage`; `Image;MovingImage`; `Text`; `Sound`
+- This field is required for DPLA aggregation!
 
 ### format_original
 
@@ -155,6 +159,8 @@ General notes:
     - Document: `application/pdf`
     - Audio: `audio/mp3`
     - Video: `video/mp4`
+- Note: this field may be `record`, `compound_object`, or `multiple` for some item types.
+- This field is required for DPLA aggregation!
 
 ### finding_aid
 
@@ -181,6 +187,7 @@ General notes:
 - Use the [ISO 639-2 Codes for the Representation of Names and Languages](https://www.loc.gov/standards/iso639-2/php/code_list.php) to identify the correct language code.
 - Multiple language codes should be separated by a semi-colon.
 - Example value: `eng`, `fre`, `spa`
+- This field is suggested for DPLA aggregation!
 
 ### rights
 
@@ -201,6 +208,7 @@ General notes:
 - Only use the URI value (starts with `http`, does not include `/page/` or `?language=en`, i.e. not the address from your browser bar), *not* the words "Educational Use Permitted".
 - For additional options not shown above, see [rightsstatements.org](https://rightsstatements.org/en/).
 - Example value: `http://rightsstatements.org/vocab/NoC-US/1.0/`
+- This field is required for DPLA aggregation!
 
 ### filename_original
 
