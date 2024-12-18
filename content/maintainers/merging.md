@@ -61,7 +61,7 @@ GitHub Desktop will list the conflicts you need to resolve before the merge can 
 
 ## About Pages
 
-1. Check the About page for content and format, cleaning up and making edits as you see fit, following guidelines on [About Pages docs]({{ '/content/collections/07-about.html' | relative_url }}).
+1. Check the About page for content and format, cleaning up and making edits as you see fit, following guidelines on [About Pages docs]({{ '/content/collections/06-about.html' | relative_url }}).
     - In particular, keep an eye out for hyperlinked text that says something like "click here." When you see this, rephrase so that the hyperlinked text describes what it links to, i.e. "For more information, see the [Idaho Forestry Website](https://www.idl.idaho.gov/forestry/)," *not* "To check out the Idaho Forestry Website, [click here](https://www.idl.idaho.gov/forestry/)."
     - Check citations to see if they are in the correct format.
     - Change any full links to pages within the collection to use relative_url. 
