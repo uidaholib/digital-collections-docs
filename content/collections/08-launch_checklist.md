@@ -12,25 +12,22 @@ When a new collection is completed or significant updates are made to an existin
 
 ## Launch:  
 
-- **Collection Point Person**:
+The Collection Point Person:
 
-    - Submit promo blurb (one paragraph) and longer copy (two paragraphs) for the library newsletter to lib-marcom lib-marcom@uidaho.edu 
+- Submit promo blurb (one paragraph) and longer copy (two paragraphs) for the library newsletter to lib-marcom lib-marcom@uidaho.edu 
 
-    - Send to Brief Notes for internal communication (email Ari) 
+- Send to Brief Notes for internal communication (email Ari) 
 
-    - Mention at Weekly updates 
+- Mention at Weekly updates 
 
-    - Library TV screen (email Andrew) 
+- Library TV screen (email Andrew) 
 
-    - Add blurb to Library Updates page (email Evan or Andrew) 
+- Add blurb to Library Updates page (email Maryelizabeth, Evan, or Andrew) 
 
-    - Submit [blurb to Daily Register](https://www.uidaho.edu/news/login/submit) 
+- Submit [blurb to Daily Register](https://www.uidaho.edu/news/login/submit) 
 
-    - Write Harvester post 
-        - Interesting project: Highlight people and work that goes into creating collections 
-        - Interesting resource: highlight unique story behind the collection materials 
-        - Quickie: just chose a couple highlight items and say check it out new collection! 
-            - Post to Harvester
-
- 
+- Write Harvester post 
+    - Interesting project: Highlight people and work that goes into creating collections 
+    - Interesting resource: highlight unique story behind the collection materials 
+    - Quickie: just chose a couple highlight items and say check it out new collection! 
 

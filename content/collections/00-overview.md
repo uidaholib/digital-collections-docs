@@ -13,7 +13,7 @@ Each Digital Collections consist of several parts:
 This "Creating Collections" section describes the workflow for setting up a new collection using one of our standard templates at U of I library.
 The complete process to create a collection from a generic template is described in the [CB-Docs](https://collectionbuilder.github.io/cb-docs/)--this version adds context specific to the workflows of Digital Collection team.
 
-Most Digital Collections team members will not regularly need to complete the full process to create a new collection--many of the steps will be completed by core maintainers, with collaborators focusing on objects, metadata, and interpretive content. 
+Most Digital Collections team members will not regularly need to complete the full process to create a new collection--many of the steps will be completed by core maintainers, with collaborators focusing on metadata and interpretive content. 
 
 ## Overview of the Process
 
@@ -28,7 +28,7 @@ Most Digital Collections team members will not regularly need to complete the fu
 9. Test on local machine (ongoing).
 10. Notify CDIL team to publish to live web.
 11. DC QC process.
-12. Promote!
+12. Launch!
 
 ## Naming Convention
 
@@ -39,4 +39,4 @@ Generally it will correspond to an existing identifier, nickname, or acronym as 
 For example, for the "Agricultural Economics Research Series" collection, the stub is "aers", thus the URL is "https://www.lib.uidaho.edu/digital/aers/", the branch is "aers", libobjects folder "aers", and metadata is "aers.csv".
 If you are generating objectids for your collection, you can also use the stub as the base, e.g. "aers339".
 
-Select your stub name and ensure it does not conflict with existing collections!
+Select your stub name in consultation with CDIL team and ensure it does not conflict with existing collections!
