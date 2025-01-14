@@ -23,4 +23,5 @@ The collection point person will:
     - Interesting project: Highlight people and work that goes into creating collections 
     - Interesting resource: highlight unique story behind the collection materials 
     - Quickie: just chose a couple highlight items and say check it out new collection! 
+- Email Digital Projects Manager when all Launch Checklist steps are complete (she will ensure the [collection tracking spreadsheet](https://vandalsuidaho.sharepoint.com/:x:/r/sites/Storage-Library/Documents/shared/Teams/Digital%20Collections%20Team/resources/Digital%20Collections%20Tracking.xlsx?d=w08ce4fe4218b4f14ae565732a4e0c44e&csf=1&web=1&e=Pa7zFq) is updated).
 

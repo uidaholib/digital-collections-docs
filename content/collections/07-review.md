@@ -10,6 +10,7 @@ Use meaningful commit messages to ensure collaborators (and your future self) un
 
 ## Before Submitting Your Collection
 
+- Ensure there is a point person for the collection. The point person will lead a collection through the review and launch process. Discuss at DC Team if necessary to clarify.
 - Checking your metadata:
     - Make sure [format](https://collectionbuilder.github.io/cb-docs/docs/metadata/gh_metadata/#format), [type](https://collectionbuilder.github.io/cb-docs/docs/metadata/gh_metadata/#type) and [display_template](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/#display_template) are filled in and assigned appropriately. 
     - Ensure items use the appropriate object type (i.e. documents are PDFs, photographs are JPGs). For example, if an image contains text that should be accessible to users and searchable, it should probably be a PDF with OCR rather than an image file.
