@@ -17,7 +17,7 @@ Use meaningful commit messages to ensure collaborators (and your future self) un
 - [Check your formatting conventions](https://collectionbuilder.github.io/cb-docs/docs/metadata/formatting/#formatting-your-metadata):
     - Make sure all of your multi-valued fields (subject, author, etc.) use a semi-colon to separate values
     - Strip any leading or trailing white space
-    - Make sure your CSV is exported with UTF-8 encoding (default of Google Sheets but not Microsoft Excel)
+    - Make sure your CSV is exported with UTF-8 encoding (default of Google Sheets and OpenRefine. Can not be created by Microsoft Excel)
     - Check that your filenames match your media, including case and file type variations (jpg vs. jpeg vs. JPG)
 - [Generate your site on your using your local server](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/csv-walkthrough/#13-run-the-bundle-exec-jekyll-serve-command-to-generate-your-site-video-version), check links and all pages to ensure features are working as expected and all items are displaying.
 - Write descriptive blurb for outreach and launch.
