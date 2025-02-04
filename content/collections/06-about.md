@@ -6,13 +6,48 @@ title: About Pages
 
 Collection About pages should describe the context of the collection content, where the material comes from, and any background on the project.
 They can cite sources, explain content details (such as extent or missing items), and acknowledge contributors.
+For some collections, About pages can go further such as presenting item highlights or longer form interpretive content--including the possibility of multiple "about" pages.
 
-Writing for the web is different from traditional documents--please use short paragraphs and plenty of headers to facilitated reading.
+Please keep these guidelines in mind for Digital Collection About pages:
+
+- The first paragraph should clearly describe the context of the collection itself (before presenting interpretive content)--often this is like repeating the collection description with a bit more detail.
+- Writing for the web is different from traditional documents. Use short paragraphs and plenty of headings. This facilitates reading and access on screen.
+- Always start with a h2 (`##`) level heading. The standard nav-menu include is designed to link to h2 level headings only. 
+- Use meaningful text in hyperlinks (i.e. don't use pattern of "click here").
 
 Collection About Pages are written in Markdown.
-Below are notes on formatting your page.
-For more basic information on how Markdown works and general formatting see [Write Markdown Everywhere](https://evanwill.github.io/markdown-everywhere/) and [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+Below are some common notes about About pages for our Digital Collections. 
+For more basic information on how Markdown works and general formatting see [Write Markdown Everywhere](https://evanwill.github.io/markdown-everywhere/).
 For more details on creating pages in CollectionBuilder, check [cb-docs Edit Site Pages](https://collectionbuilder.github.io/cb-docs/docs/pages/).
+
+-------
+
+## Headings
+
+About page content will be broken into sections using headings. 
+
+Always start the page with an h2. 
+All main sections will also be h2. 
+
+```
+## Page Title 
+
+## Section title
+
+### Subsection title
+
+```
+
+Do not skip heading levels! 
+Heading should follow hierarchically like an outline. 
+
+The "nav-menu" include is designed to provide links to the h2 sections. 
+
+`{% raw %}{% include feature/nav-menu.html sections="About CollectionBuilder;About the About Page" %}{% endraw %}`
+
+In the "sections" value, paste the exact text of each heading you want in the nav, separated by semicolons.
+
+-------
 
 ## Citations
 
@@ -21,15 +56,19 @@ Whenever possible, use [Turabian Style](https://www.chicagomanualofstyle.org/tur
 
 To add a footnote in Markdown, directly after the sentence you'd like to cite, add a left square bracket (`[`), followed by a caret symbol (`^`), followed by a footnote number (i.e. `1`, `2`, `3`, etc.), followed by a left square bracket (`]`). See below for an example:
 
-`Example text to be cited.[^1]`
+```
+Example text to be cited.[^1]
 
-`Yet more text to cite.[^2]`
+Yet more text to cite.[^2]
+```
 
 Then, at the very bottom of the page, you'll create a section with the heading `Sources`, and add the bracketed footnote numbers (i.e. `[^1]`, `[^2]`, `[^3]`, etc.), followed by a colon (`:`) and citation, like this:
 
-`[^1]: Katie Kitamura, *A Separation* (New York: Riverhead Books, 2017), 25.`
+```
+[^1]: Katie Kitamura, *A Separation* (New York: Riverhead Books, 2017), 25.
 
-`[^2]: Sharon Sassler and Amanda Jayne Miller, *Cohabitation Nation: Gender, Class, and the Remaking of Relationships* (Oakland: University of California Press, 2017), 114.`
+[^2]: Sharon Sassler and Amanda Jayne Miller, *Cohabitation Nation: Gender, Class, and the Remaking of Relationships* (Oakland: University of California Press, 2017), 114.
+```
 
 On the front end, your footnote number will automatically link down to its corresponding citation, which will reside at the "foot" of your essay.
 To see this in action, look at the cited text below, and click on the blue `1` and `2` footnotes at the end of each line.
@@ -42,8 +81,8 @@ You can create hyperlinks in Markdown like this:
 
 `[GitHub Help](https://help.github.com/)`
 
-When linking to pages within the same collection, use Jekyll's `relative_url` feature. 
-Instead of writing out https://www.lib.uidaho.edu on an About page you should use the liquid relative_url formula:
+When linking to pages **within the same collection**, use Jekyll's `relative_url` feature. 
+Instead of writing out https://www.lib.uidaho.edu on an About page you should use the Liquid relative_url formula.
 
 **Don't** do this:
 
@@ -71,7 +110,7 @@ Use Perma.cc, a web archiving service, to capture archive copies of web pages th
 
 If using Perma.cc for the first time, check [Evan's workshop for more information about getting started](https://evanwill.github.io/web-cites/content/4-perma.html).
 
-Once logged in, navigate to UI Library DDS > Digital Collection About pages. Select the collection folder you are working on or create a new folder. Then, add your link.
+Once logged in, navigate to UIdaho SPEC > Collection Bibliographies folder. Select the collection folder you are working on or create a new folder. Then, add your link.
 
 Add the archived Perma.cc link to your citations like this: 
 
@@ -97,70 +136,17 @@ On the front end, a horizontal line break will look like this:
 
 ------
 
-## Table of contents
-
-If you break the About page into sections you can title each of those sections using headings.
-To do this, use the various heading sizes:
-
-`# Heading 1` should only be used once, for title
-
-`## Heading 2` should be used for sections of your page
-
-`### Heading 3` should be used for sub-sections of your page
-
-You can have multiple headings of the same type throughout your essay, and nest headings hierarchically just as you would an outline, like this: 
-
-```
-# First Heading 1
-
-## First Heading 2
-
-### First Heading 3
-
-## Second Heading 2
-```
-
-...which looks like this on the front end:
-
-# First Heading 1
-
-## First Heading 2
-
-### First Heading 3
-
-## Second Heading 2
-
-**Remember, always separate a heading from the text below it with a blank line.** 
-
-If you do incorporate headings, you'll probably find it convenient to make use of the table of contents feature at the top of the essay.
-
-The table of contents is generated from the include that looks like this:
-
-{% raw %}{% include feature/nav-menu.html sections="About CollectionBuilder;About the About Page" %}{% endraw %}
-
-"sections" is followed by an equals sign (`=`) and values separated by semicolons and encased with quotation marks.
-
-The two values inside the quotation marks correspond to headings in the default about.md file:
-
-`## About CollectionBuilder`
-
-`## About the About Page`
-
-**In order for the contents box to work correctly, the word in the Table of Contents Include needs to match a heading somewhere in your essay.**
-When you click on the links in the table of contents, and your page will automatically scroll down to the corresponding section.
-
----
-
 ## Block Quotes
 
 Add a block quote to your About page using the block quote include:
 
-`{% raw %}{% include feature/blockquote.html quote="Knowledge comes, but wisdom lingers" speaker="Alfred Lord Tennyson" source="Locksley Hall" %}{% endraw %}`
+`{% raw %}{% include feature/blockquote.html text="Knowledge comes, but wisdom lingers" speaker="Alfred Lord Tennyson" source="Locksley Hall" %}{% endraw %}`
 
 Options:
-- "quote" = quote text, can use Markdown
-- "speaker" = name of the person who said the quote
-- "source" = title of the quote's source
-- "source-link" = link to source
+
+- "text" = quote text, can use Markdown (required, hint: use a capture statement to add more complex text!)
+- "speaker" = name of the person who said the quote (optional)
+- "source" = title of the quote's source (optional)
+- "link" = link to source, will be added to speaker/source (note: will not be added unless you have a speaker or source value!)
 
 See additional instructions and example at the top of the `/_includes/feature/blockquote.html` file.
