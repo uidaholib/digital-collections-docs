@@ -14,6 +14,7 @@ Please keep these guidelines in mind for Digital Collection About pages:
 - Writing for the web is different from traditional documents. Use short paragraphs and plenty of headings. This facilitates reading and access on screen.
 - Always start with a h2 (`##`) level heading. The standard nav-menu include is designed to link to h2 level headings only. 
 - Use meaningful text in hyperlinks (i.e. don't use pattern of "click here").
+- Don't use double spaces! These can get misinterpreted by Markdown engines and cause odd formatting. 
 
 Collection About Pages are written in Markdown.
 Below are some common notes about About pages for our Digital Collections. 
@@ -41,7 +42,9 @@ All main sections will also be h2.
 Do not skip heading levels! 
 Heading should follow hierarchically like an outline. 
 
-The "nav-menu" include is designed to provide links to the h2 sections. 
+Always leave a blank line above and below a heading to ensure correct rendering.
+
+The "nav-menu" include is designed to provide links to the h2 sections *only*.
 
 `{% raw %}{% include feature/nav-menu.html sections="About CollectionBuilder;About the About Page" %}{% endraw %}`
 
@@ -52,7 +55,7 @@ In the "sections" value, paste the exact text of each heading you want in the na
 ## Citations
 
 You'll need to cite the sources for your multimedia essay just as you would for any academic essay.
-Whenever possible, use [Turabian Style](https://www.chicagomanualofstyle.org/turabian/turabian-notes-and-bibliography-citation-quick-guide.html) to add your citations as footnotes.
+Whenever possible, use [Chicago Style / Turabian Style](https://www.chicagomanualofstyle.org/turabian/turabian-notes-and-bibliography-citation-quick-guide.html) to add your citations as footnotes.
 
 To add a footnote in Markdown, directly after the sentence you'd like to cite, add a left square bracket (`[`), followed by a caret symbol (`^`), followed by a footnote number (i.e. `1`, `2`, `3`, etc.), followed by a left square bracket (`]`). See below for an example:
 
@@ -82,7 +85,7 @@ You can create hyperlinks in Markdown like this:
 `[GitHub Help](https://help.github.com/)`
 
 When linking to pages **within the same collection**, use Jekyll's `relative_url` feature. 
-Instead of writing out https://www.lib.uidaho.edu on an About page you should use the Liquid relative_url formula.
+Instead of writing out https://www.lib.uidaho.edu you should use the Liquid relative_url formula.
 
 **Don't** do this:
 
