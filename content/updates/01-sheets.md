@@ -28,6 +28,8 @@ Rather than using existing copies of the metadata in Sheets, in most cases it is
 
 Be safe and have fun!
 
+Note: for published collections **NEVER change or renumber objectid's**! Once a collection is published, the objectid forms the URL to the Item page and are considered permanent reference links. Changing objectid's will break any existing references.
+
 ## Export from Sheets
 
 1. Click File > Download > "Comma Separated Values (.csv)"
