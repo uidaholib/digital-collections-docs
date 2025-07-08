@@ -20,6 +20,26 @@ General notes:
 
 ## Standard Template Fields
 
+### objectid 
+
+- *required* - however, this value is often pre-filled or filled in after metadata creation for new collections.
+- A unique id used by the system to identify each row/item in the collection.
+- The value must be all **lowercase** with no spaces or special characters as it will be used to form the item's URL. Underscores (`_`) and dashes (`-`) are okay; slashes (`/`) can NOT be used in this field.
+- Objects without an objectid will not be displayed in the collection. Objects with non-unique objectid will be overwritten.
+- Example value: `coll002`
+
+{% capture idalert %}
+Important notes about objectid:
+
+- objectid's are arbitrary and should not be considered a meaningful part of the metadata.
+- objectid's can be arbitrary numbering (often following a convention like `collectionstub0001`) or can be based on another metadata field (such as date or identifier, e.g. `arg-1907-02-19`).
+- It can be helpful to have filenames match objectid, but it is not required or always useful.
+- For published collections **NEVER change or renumber objectid's**! Once a collection is published, the objectid forms the URL to the Item page and are considered permanent reference links. Changing objectid's will break any existing references.
+- When adding new items, resist the temptation to renumber the objectid's to order the records! Add new numbers out of sequence or add qualifiers to the end (e.g. `coll002b`).
+
+{% endcapture %}
+{% include alert.html text=idalert color="info" %}
+
 ### title 
 
 - *required*
