@@ -40,6 +40,13 @@ Important notes about objectid:
 {% endcapture %}
 {% include alert.html text=idalert color="info" %}
 
+### parentid 
+
+- Used for "compound_object" and "multiple" display_templates to associate child records with parent.
+- For non-compound object items, and parent items, the "parentid" field will be left blank.
+- Value will exactly match one parent "objectid" value.
+- Each child record will still have a unique "objectid" value!
+
 ### title 
 
 - *required*
@@ -61,18 +68,19 @@ Important notes about objectid:
 
 ### date
 
-- The date the item was created/published in ISO format `yyyy-mm-dd`. 
+- The date the item was created/published in ISO format `yyyy-mm-dd`, `yyyy-mm`, or `yyyy`. 
 - If you know the exact date for an item, fill it in using the yyyy-mm-dd format. If you only know the year and month, simply leave off the day: 1955-12. Likewise, if you only know the year, just enter the year: 1955. 
-- If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. 
-    - For example, if you think a photo was probably taken in the 1950s based on a car or clothing pictured, you can put '1950' or '1955' in the data cell. Be sure to fill in the date range in YYYY-YYYY format (in this case, 1950-1960) in the 'archival_date' cell in this situation, but do not put the range in the "date" column.
-- If you do not know the date and cannot estimate it, leave this field blank.
-- The "date" field is intended to be sortable and machine readable in order that items can be put on a timeline or sorted--so having it strictly in ISO format is important! No slashes or ranges!
+- If there is no year included with the item, you can estimate the date to the nearest decade if you know enough information about the content of the image or item. This value is intended to help users discover relevant materials and visualize the timeline.
+    - For example, if you think a photo was taken in the 1950s based on a car or clothing pictured, you can put `1950` or `1955` in the date cell. Be sure to fill in the date range in YYYY-YYYY format (in this case, 1950-1960) in the "archival_date" cell in this situation, but do not put the range in the "date" column.
+- *If you do not know the date and cannot estimate it, leave this field blank.*
+- The "date" field is intended to be sortable and machine readable in order that items can be put on a timeline or sorted--so having it strictly in ISO format is important! No slashes or ranges or undated or N/A!
 - Example values: `1955-12-08`; `1955-12`; `1955`
 
 ### archival_date
 
-- This is an alternate, non-ISO date field to represent the ambiguity of dates using archival conventions. 
+- This is a free text date field to represent the date(s) using archival conventions (such as [DACS](https://saa-ts-dacs.github.io/dacs/06_part_I/03_chapter_02/04_date.html)). This can be used to express full ambiguity of item's dates.
 - While the "date" field is used to sort and put items on a timeline, "archival_date" is used for display on the item page to ensure the specificity of the date can be communicated.
+- All items that have a value in "date" should ALSO have a value in "archival_date". In the case of certain dates, the values will be the same.
 - General conventions:
     - If an object's date is somewhere within an approximate date range (i.e. "2020-2030" or "2020-2025"), enter that range into this cell in the format YYYY-YYYY.
     - In the event that no date is known, enter the value `undated`.
@@ -114,6 +122,11 @@ Important notes about objectid:
 - `City, State` format, but can sometimes extend to `City, County, State, Country` depending on the collection (check with a supervisor to be sure). 
 - Separate multiple location entries for a single record with a semicolon (;).
 - Example values: `Boise, Idaho`; `Potlatch, Latah County, Idaho`; `Jakarta, Indonesia`
+
+### idaho_county
+
+- The Idaho county the content is associated with. 
+- This field is used to highlight impacts across the state.
 
 ### latitude 
 
@@ -186,7 +199,7 @@ Important notes about objectid:
 
 - A link to the finding aid for the physical version of this resource, if it exists.
 - The value should be simply a URL without any HTML markup.
-- Example value: `https://archiveswest.orbiscascade.org/ark:/80444/xv40698/`
+- Example value: `https://archiveswest.orbiscascade.org/ark:80444/xv40698`
 
 ### digital_collection
 
@@ -215,6 +228,7 @@ Important notes about objectid:
 - These statements indicate to viewers and researchers what permissions are required to use the material in publication, and how to attribute the item once used. 
 - Suggested value for material **in copyright**: `In copyright, educational use permitted. Educational use includes non-commercial reproduction of text and images in materials for teaching and research purposes. For other contexts beyond fair use, including digital reproduction, please contact the University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
 - Suggested value for **no copyright**: `Material has likely passed into public domain. Digital reproductions are made available by University of Idaho Library for educational purposes, and future use should acknowledge this repository. For more information, please contact University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
+- If the item is NOT held by Spec, please modify the rights to refer to the source organization.
 - Not sure about the rights for your item? Refer to the [Cornell Library copyright guide](https://guides.library.cornell.edu/copyright/publicdomain) to determine if the item is old enough that its copyright has expired.
 
 ### rightsstatement
@@ -244,6 +258,21 @@ Important notes about objectid:
 - See the [filenaming docs]({{ '/content/scanning/02-filenaming.html' | relative_url }}) for more information.
 - Example value: `ua2011-30_1913-14.pdf`
 
+### transcriber
+
+- Free text field to describe how the item was transcribed. 
+- Please include services or AI models, and reviewers or editors.
+- Include a year if other than when the collection was created, or if it was transcribed in different batches.
+- Example value: `Otter AI, reviewed by Klytie 2023`
+
+### image_alt_text
+
+- An appropriate textual description of the "image_small" representation of the item. The alt text corresponds to the "image_small" (not necessarily the file at "object_location").
+- This value will be used as the "alt" value of the image element, which is important for accessibility (and required!). If no "image_alt_text" is provided, the template will fall back to using the item's "description" or "title" value (which in many cases is not ideal for users). 
+- Using the "image_alt_text" field allows you to provide more carefully crafted alt text depending on the item contents, type, and purpose. It should succinctly describe the visual contents of the image (which is typically not the same as the "description" field). See [WAI Images Tutorial](https://www.w3.org/WAI/tutorials/images/) for more tips.
+- Example value: `Man standing with pump machinery next to a river with trees and mountains in the distance`
+
+
 -------------
 
 ## Technical Fields
@@ -259,6 +288,8 @@ They can generally be filled out by CDIL team after metadata creation.
 
 ### image_thumb
 
+### object_transcript
+
 -------------
 
 ## Uncommon or Legacy Fields
@@ -273,9 +304,8 @@ They can generally be filled out by CDIL team after metadata creation.
 ### relation
 
 - This field indicates if there are any relationships between resources. 
-- An example of this would be if a collection contains material from another collection, or is similar to material in another collection. The title of the related collection would be the value for this field. The related collection may be physical or digital.
-- This is not an often used field, and will usually be populated by the Digital Projects Manager. 
-- Example values: [The Argonaut](https://www.lib.uidaho.edu/digital/argonaut/) digital collection might include the `Argonaut Photograph Collection` as a relation
+- An example of this would be if a collection contains material from another collection, or appears in another source. The title of the related collection would be the value for this field. The related collection may be physical or digital.
+- This is not an often used field, and will usually be populated by the Digital Projects Manager.
 
 ### Legacy CONTENTdm fields
 
