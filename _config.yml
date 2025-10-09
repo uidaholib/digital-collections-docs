@@ -52,6 +52,36 @@ text-color: "#111;"
 # base-font-size:
 
 ##########
+# SITE ICONS [optional! usually leave as is]
+#
+# don't change the keys! 
+# to customize, choose from icons in _includes/bootstrap-icons/, base filename without .svg
+icons: 
+  anchor-link-icon: link
+  next-page: chevron-right
+  previous-page: chevron-left
+  back-to-top: arrow-up-square
+  source-code: file-earmark-code-fill
+  search-icon: search
+
+
+##########
+# ANCHOR HEADINGS [optional!]
+#
+# uncomment and set to false to turn off anchor headings
+# anchor_headings: false
+#
+
+
+##########
+# SEARCH SETTINGS [optional!]
+#
+# set heading level for search segmentation
+search_heading_level: 3
+# page.search_exclude
+
+
+##########
 # URL VARIABLES [optional!]
 #
 # Optional if using GitHub Pages! If building manually, these must be set correctly.

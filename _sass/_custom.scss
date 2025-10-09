@@ -2,5 +2,7 @@
 a {
     font-weight: bold;
 }
+.btn, .breadcrumb-item, .breadcrumb-item a, .breadcrumb-item::before, .side-bar-item { text-decoration: none; }
+.search-results-list-item a { text-decoration: none; }
 
 #tower-logo { height: 35px; }
