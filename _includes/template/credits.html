@@ -1,9 +1,9 @@
 <hr>
 
-<div class="my-4 mx-5 pt-3">
-    <h3>Credits</h3>
+<div class="my-4 mx-5">
+    <h2>Credits</h2>
 
-    <p><small><em>Citation:</em></small>
+    <p>Citation:
         <code> 
         "{{ site.title }}", 
         {% if site.author %}{{ site.author }},{% endif %}
@@ -12,16 +12,16 @@
         </code>
     </p>
 
-    <p><small>
-        <em>Content:</em>
+    <p>
+        Content:
         {% if site.content_license_link %}<a href="{{ site.content_license_link }}">{{ site.content_license }}</a>
         {% elsif site.content_license %}{{ site.content_license }}{% endif %} 
         {% if site.publication_year %}{{ site.publication_year }}{% endif %}
         {{ site.author }} 
-        {% if site.source-code %}- <a href="{{ site.source-code }}" target="_blank" rel="noopener">Source Code</a>{% endif %}.
-    </small></p>
+        {% if site.source-code %}- <a href="{{ site.source-code }}" >Source Code</a>{% endif %}.
+    </p>
 
-    <p><small>
-        <em>Theme:</em> <a href="https://github.com/learn-static/lesson-template" target="_blank" rel="noopener">lesson-template</a> by <a href="https://github.com/learn-static" target="_blank" rel="noopener">Learn-Static</a> is built using <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>. The site is styled using <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>.
-    </small></p>
+    <p>
+        Theme: <a href="https://github.com/learn-static/lesson-template" >lesson-template</a> by <a href="https://github.com/learn-static" >Learn-Static</a> is built using <a href="https://jekyllrb.com/" >Jekyll</a> on <a href="https://pages.github.com/" >GitHub Pages</a>. The site is styled using <a href="https://getbootstrap.com/" >Bootstrap</a>.
+    </p>
 </div>

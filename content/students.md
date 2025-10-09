@@ -1,6 +1,7 @@
 ---
 nav_order: 1
 title: Student Resources
+anchor_headings: false
 ---
 
 Other areas for the University of Idaho’s Digital Scholarship and Open Strategies department:

@@ -1,3 +1,10 @@
+/* smooth scroll for back to top, unless user opt out */
+html {
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+}
+
 /* tweak defaults if variables set */
 body {
     @if variable-exists(base-font-size) { font-size: $base-font-size; }
@@ -13,6 +20,8 @@ body {
         }
     }
 }
+/* remove link underline */ 
+//a { text-decoration: none; }
 
 /* setup header */ 
 @if variable-exists(header-background) {
@@ -38,8 +47,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 99;
-    // remove mysterious gap at top??? 
-    margin-top: -2px;
     // set breadcrumb divider type
     nav {
         --bs-breadcrumb-divider: '>';
@@ -59,10 +66,16 @@ body {
             color: #fff;
             border-color: #fff;
         }
-        text-decoration: none;
     }
 }
-
+// add margin to headings so anchor links line up
+h1, h2, h3, h4, h5, h6, #maincontent {
+  scroll-margin-top: 80px;
+}
+// anchor highlight style
+.anchor-highlight {
+    text-decoration: green wavy underline;
+}
 
 /* set up sidebar + content flex grid */ 
 @media (min-width: 992px) {
@@ -123,7 +136,6 @@ body {
     color: rgba(0, 0, 0, .75);
     background-color: transparent;
     border: 0;
-    text-decoration: none;
 }
 .side-bar-item:hover, .side-bar-item:focus {
     color: rgba(0, 0, 0, .85);
@@ -244,4 +256,9 @@ div.highlighter-rouge {
     width: 1em;
     height: 1em;
     vertical-align: -0.1em;
+}
+
+/* search */
+.search-result-highlight {
+    text-decoration: green wavy underline;
 }

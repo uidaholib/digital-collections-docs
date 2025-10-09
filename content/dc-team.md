@@ -1,6 +1,7 @@
 ---
 nav_order: 2
 title: Digital Collections Team
+anchor_headings: false
 ---
 
 The University of Idaho Library Digital Collections Team works to determine policy and workflows for the production and publishing of digital collections to produce a consistent, engaging user experience for patrons across the library's web platforms and discovery services and to encourage ownership of digital collections and investment in their excellence across the library. 

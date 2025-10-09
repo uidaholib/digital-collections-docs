@@ -5,15 +5,6 @@
                 <img src="https://www.lib.uidaho.edu/media/images/tower_icon_gold.png" id="tower-logo" class="img-fluid me-3" alt="gold library tower logo">
                 {{ site.title }}
             </a>
-            <form class="ms-auto mb-3 mb-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
-                <input id="site-search" class="form-control" type="search" placeholder="Search" aria-label="Search box">
-            </form>
         </div>
     </nav>
 </header>
-<script>
-    function site_search() {
-    var query = document.getElementById("site-search").value;
-    window.open("{{ '/search/index.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
-    }
-</script>

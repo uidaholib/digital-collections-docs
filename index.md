@@ -1,6 +1,7 @@
 ---
 title: Digital Collections at the University of Idaho
 layout: lesson-content
+anchor_headings: false
 ---
 
 ## Welcome!
