@@ -10,7 +10,7 @@ CSVs are [plain text files](https://en.wikipedia.org/wiki/Plain_text), which mea
 The characters in a plain text file are encoded at the byte level following various standards, such as [UTF-8](https://en.wikipedia.org/wiki/UTF-8) (which is the standard encoding on the web).
 The computer reads the bytes then uses the encoding standard to select which visual character to display.
 
-Unfortunately, character encoding is complicated!
+Unfortunately, character encoding is complicated! (and the file itself does not specify which encoding it uses!)
 
 For example, a text file containing one encoding can get a character from a different standard saved into it.
 A text file written in one encoding can be opened with the wrong encoding.
@@ -32,15 +32,22 @@ Singaporeâ€™s
 
 (This nonsense is called [Mojibake](https://en.wikipedia.org/wiki/Mojibake). A slightly different issue is when a specific font does not have the character to display, which is called ["tofu"](https://fonts.google.com/knowledge/glossary/tofu)--an issue with the font, not necessarily encoding.)
 
+## Sources of corrupted characters 
+
 Avoiding character corruption issues requires careful handling and attention to our CSVs.
 
-The main forms of corrupt characters are from two sources: 
+The main forms of corrupt characters are from three sources: 
 
 1. Opening UTF-8 CSV in Excel (or opening it in wrong character encoding in another program)
     - This situation can be avoided by NEVER opening or saving a CSV with Excel! Only open and save XLSX files with Excel. 
     - If you accidentally double click on a CSV and it opens in Excel, the characters are potentially corrupted (via the replacement character issue).
-2. Ambiguous characters saved in UTF-8 later opened by a spreadsheet program (ambiguous characters converted into replacement characters)
-    - This situation usually comes from pasting text from MS Word or other document editor into a textfile, CSV, or Sheet. At first it will appear correct, but when re-imported into Sheets all ambiguous character will be corrupted into replacement characters.
+2. Incorrect parsing by Google Sheets
+    - Sheets seems to examine the first part of a file to guess the character encoding, then parses it using the guessed encoding. Unfortunately, rather than defaulting to UTF-8, it seems to guess incorrectly if there are no accented characters towards the top of the file.
+    - If your CSV has accented characters or diacritics near the top, it will be parse correctly. 
+    - If your CSV has accented characters or diacritics ONLY far down in the file, Sheets guesses wrong, and ends up corrupting those characters.
+    - If corruption is happening, a trick is to put an accented character in the top row of the CSV, forcing Sheets to parse it correctly.
+3. Ambiguous characters saved in UTF-8 later opened by a spreadsheet program (ambiguous characters converted into replacement characters)
+    - This situation usually comes from pasting text from MS Word or other document editor into a textfile, CSV, or Sheets. At first it will appear correct, but when re-imported into Sheets all ambiguous character will be corrupted into replacement characters.
 
 ## Ambiguous characters
 
