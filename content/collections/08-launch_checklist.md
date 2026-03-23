@@ -16,7 +16,7 @@ The collection point person will:
     - for the library newsletter to lib-marcom lib-marcom@uidaho.edu 
     - for Library Updates page (email Maryelizabeth)
     - for Brief Notes (email Ari) 
-    - for [Daily Register](https://www.uidaho.edu/news/login/submit) 
+    - for [Daily Register](https://vandalsuidaho.sharepoint.com/sites/InsideUI-UCM/SitePages/Newsletter-Submissions.aspx)
 - Mention at Weekly updates 
 - Library TV screen (email Andrew) 
 - Write Harvester post 
