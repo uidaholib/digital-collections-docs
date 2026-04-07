@@ -6,7 +6,7 @@ anchor_headings: false
 
 Other areas for the University of Idaho’s Digital Scholarship and Open Strategies department:
 
-- [About us](https://www.lib.uidaho.edu/digital/about/)
+- [About us](https://www.lib.uidaho.edu/digital/home/about.html)
 - [CDIL Home](https://cdil.lib.uidaho.edu/)
 - [Complete CollectionBuilder documentation](https://collectionbuilder.github.io/cb-docs/)
 
