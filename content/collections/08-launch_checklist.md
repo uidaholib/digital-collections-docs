@@ -1,6 +1,6 @@
 ---
 section: Creating Collections
-nav_order: 8
+nav_order: 9
 title: Launch Checklist
 ---
 
@@ -13,9 +13,9 @@ Ensure there is a point person for the collection. The point person will lead a 
 The collection point person will:
 
 - Submit promo blurb (one paragraph) and longer copy (two paragraphs): 
-    - for the library newsletter to lib-marcom lib-marcom@uidaho.edu 
-    - for Library Updates page (email Maryelizabeth)
-    - for Brief Notes (email Ari) 
+    - for the library social media to lib-marcom lib-marcom@uidaho.edu 
+    - for Library Updates page (email Evan)
+    - for Brief Notes (email Elaina) 
     - for [Daily Register](https://vandalsuidaho.sharepoint.com/sites/InsideUI-UCM/SitePages/Newsletter-Submissions.aspx)
 - Mention at Weekly updates 
 - Library TV screen (email Andrew) 
