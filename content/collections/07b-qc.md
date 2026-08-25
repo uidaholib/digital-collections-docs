@@ -4,7 +4,7 @@ nav_order: 8
 title: Collection QC
 ---
 
-Once a new collection has been submitted for review, the Digital Projects Manager and Digital Initiatives Librarian will prep it for QC:
+Once a new collection has been submitted for review, the Digital Projects Manager and Digital Initiatives Librarian will prep it for publishing on the web and Quality Control review:
 
 - [Merge any updates from main]({{ '/content/maintainers/merging.html' | relative_url }}) if necessary.
 - Ensure objects and metadata are fully prepped and organized (CDIL Team): 

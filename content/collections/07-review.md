@@ -26,7 +26,7 @@ Do not hesitate to reach out for help debugging issues or if you need a batch of
 
 {% include alert.html text="Please note, when creating a new collection, it will NOT be in the central search index until final publishing. In the meantime, it will use the static Lunr search." color="info" %}
 
-## Quality Control and Publish
+## Submit for Review
 
 Once the collection is ready for review, submit it to the CDIL team via the [Collection Update Form](https://forms.office.com/r/8S0dZ8viDJ).
 
