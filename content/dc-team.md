@@ -35,6 +35,8 @@ Links to team documents are located below.
 
 {% include button.html text="Collection Updates Spreadsheet" link="https://vandalsuidaho.sharepoint.com/:x:/r/sites/Storage-Library/Documents/shared/Digital%20Collections%20Team/Collection%20Updates.xlsx?d=w6432809351bc4863bc70f4517fd61067&csf=1&web=1&e=x0HbJ2" color="success" %}
 
+{% include button.html text="Blank Metadata Template" link="https://docs.google.com/spreadsheets/d/1dRgG-Xd28gRZ9ErbU6-1YtgNM6gHFEh3IFNOwKzpoRc/copy?usp=sharing" color="success" %}
+
 </div>
 </div>
 
