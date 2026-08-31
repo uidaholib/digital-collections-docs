@@ -5,16 +5,19 @@ title: Metadata Guidelines
 ---
 
 The sections below describe the standard fields and conventions used in our metadata template. 
-Additional fields can be added as needed to describe the unique qualities of the collection, however, the standardized fields should be filled as much as possible to ensure interoperability. 
+Additional fields can be added as needed to describe the unique qualities of the collection, however, the standardized fields should be filled as much as possible to ensure interoperability.
 
 General notes:
 
-- All field names should be lowercase and contain no spaces! (underscore `_` is okay)
+- If you need a fresh starting spreadsheet, copy the blank [metadata template in Sheets](https://docs.google.com/spreadsheets/d/1dRgG-Xd28gRZ9ErbU6-1YtgNM6gHFEh3IFNOwKzpoRc/copy?usp=sharing)
+- All field names should be lowercase and contain no spaces! (underscore `_` is okay). Watch for extra spaces at the end of names.
 - Field values should be plain text only in most cases (i.e. no Markdown or HTML) unless it is a highly customized collection.
 - The first column should be objectid, and should be filled for *every* row (i.e. do not have blank values in the first column).
-- Ensure you handle CSVs correctly (i.e. do not use Excel to open or create CSVs!). Use Sheets or OpenRefine to correctly transform metadata in CSVs into XLSX or XLSX to CSV.
+- Ensure you handle CSVs correctly (i.e. do not use Excel to open, import, or export CSVs!). Only use Sheets or OpenRefine to correctly transform metadata in CSVs into XLSX or XLSX to CSV.
 - Separate multivalued fields with semicolon `;`.
-- If you need a fresh starting spreadsheet, check the blank [metadata template in Sheets](https://docs.google.com/spreadsheets/d/1dRgG-Xd28gRZ9ErbU6-1YtgNM6gHFEh3IFNOwKzpoRc/copy?usp=sharing)
+- If a collection does not use a field, feel free to delete the column.
+- Minimal required fields necessary for search and aggregation: objectid, title, type, format, rightsstatement.
+- Full standard fields: objectid, parentid, title, creator, date, archival_date, description, subject, location, idaho_county, latitude, longitude, source, identifier, type, format_original, format, finding_aid, digital_collection, contributing_institution, language, rights, rightsstatement, filename_original, cataloger, transcriber, filename, display_template, object_location, image_small, image_thumb, image_alt_text, object_transcript.
 
 ------
 
@@ -101,10 +104,12 @@ Important notes about objectid:
 
 - *required* 
 - A detailed, 1-3 sentence accounting of the item, communicating what it is and its contents.
-- This includes small details such as "mountains can be seen in the background", and should include names when known. 
-- All descriptions should be in complete sentences, with a single space between sentences. Descriptions should be no more than 1-3 sentences.
-- If the item is an image that includes text, ensure the description includes a transcription of the text in context. e.g. `Text on the image reads: ...`
-- Please note: description is used as the default "alt" text for images, so should convey the content of the image. If a more targeted alt text would function better for that purpose, please use the "image_alt_text" field.
+- All descriptions should be in complete sentences, with a single space between sentences. Generally, descriptions should be no more than 1-3 sentences.
+- For images: 
+    - Includes content details such as "mountains can be seen in the background" and subject names when known. 
+    - If the item is an image that includes text, ensure the description includes a transcription of the text in context. e.g. `Text on the image reads: ...`
+- For documents, the value may be the abstract for some collections.
+- Please note: description is used as the default "alt" text for images, so should convey the content of the image. If a more targeted alt text would function better for that purpose, please use the "image_alt_text" field!
 - Example value: `Students on lawn in front of old Gault Hall, which was torn down in 2003 to make room for the current Living Learning Center.`
 
 ### subject
@@ -145,17 +150,17 @@ Important notes about objectid:
 
 ### source
 
-- The physical source of the material, so that a user can understand the context and find the original material.
+- The physical or organizational source of the material, so that a user can understand the context and find the original material.
 - The may be one or more physical collections or organizations. Check with your supervisor to identify the source of the items you are describing. 
 - This will generally include a physical collection's collection number or call number, so people are able to find the item in-person if they want to.
 - Generally follows the pattern "collection name, collection number, organization name, link".
+- Think of source like a good citation to the material. For academic document collections it can be an actual citation to the original publication.
 - Example value: `Idaho Cities and Towns Photographs, PG 5, University of Idaho Library Special Collections and Archives, https://www.lib.uidaho.edu/special-collections/`
 
 ### identifier
 
-- The unique identifier assigned to the object by the object's (usually physical) source collection in Special Collections.
-- This is usually found on the folder or box the object is in. 
-- For new collections the identifier should always match the object's filename. See the [filenaming docs]({{ '/content/scanning/02-filenaming.html' | relative_url }}) for more information.
+- The unique identifier assigned to the object by the object's (usually physical) source collection so it could be traced to original location or linked to original metadata.
+- This is usually found on the folder or box the object is in.
 - Example value: `ARG-1993-02-16`
 
 ### type
@@ -204,8 +209,7 @@ Important notes about objectid:
 ### digital_collection
 
 - This field contains the name of the digital collection to which all of the material you are working with belongs. 
-- It lets those viewing the item know where they can find more materials related to this item in case they found it by searching for a subject, or through another linked entry. 
-- This also provides a connection with the physical material and helps individuals to know where it is located. 
+- It lets those viewing the item know where they can find more materials related to this item in case they found it by searching for a subject, or through another linked entry.
 - Example value: `Argonaut Photograph Collection`
 
 ### contributing_institution
@@ -226,6 +230,7 @@ Important notes about objectid:
 
 - A free text rights statement. 
 - These statements indicate to viewers and researchers what permissions are required to use the material in publication, and how to attribute the item once used. 
+- The majority of our collection items should use one of the two standard options listed below, unless there is some special circumstance.
 - Suggested value for material **in copyright**: `In copyright, educational use permitted. Educational use includes non-commercial reproduction of text and images in materials for teaching and research purposes. For other contexts beyond fair use, including digital reproduction, please contact the University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
 - Suggested value for **no copyright**: `Material has likely passed into public domain. Digital reproductions are made available by University of Idaho Library for educational purposes, and future use should acknowledge this repository. For more information, please contact University of Idaho Library Special Collections and Archives Department at libspec@uidaho.edu. The University of Idaho Library is not liable for any violations of the law by users.`
 - If the item is NOT held by Spec, please modify the rights to refer to the source organization.
@@ -236,7 +241,7 @@ Important notes about objectid:
 - *required*
 - This field is a standardized rights statement, designated in the form of a URI (Uniform Resource Identifier). 
 - It should be presented as a [creativecommons.org](https://creativecommons.org/) or [rightsstatements.org](https://rightsstatements.org/en/) URI. 
-- Common options include:
+- The majority of our collection should use one of these two options:
     - **In Copyright - Educational Use Permitted**: `http://rightsstatements.org/vocab/InC-EDU/1.0/`
     - **No Copyright**: `http://rightsstatements.org/vocab/NoC-US/1.0/`
 - Only use the URI value (starts with `http`, does not include `/page/` or `?language=en`, i.e. not the address from your browser bar), *not* the words "Educational Use Permitted".
@@ -252,10 +257,8 @@ Important notes about objectid:
 
 - The value must exactly match the actual filename, including capitalization and extension. This value is case-sensitive!
 - Generally, the filenames will be based on the identifier PLUS extension (.jpg, .tif, .pdf, .wav, etc.)
-- Our digital content management system uses this field to correctly link the digitized item to the corresponding metadata entry. 
-- When possible, a pre-set formula will add the correct extension to each identifier entered in previous columns to save from any re-entry errors. 
-- The filename values will be generated by staff in most cases. 
-- See the [filenaming docs]({{ '/content/scanning/02-filenaming.html' | relative_url }}) for more information.
+- This is important to link metadata records to the related files in preservation and access contexts.
+- The filename values will generally be prepopulated to avoid errors.
 - Example value: `ua2011-30_1913-14.pdf`
 
 ### transcriber
@@ -284,7 +287,6 @@ Important notes about objectid:
 - Using the "image_alt_text" field allows you to provide more carefully crafted alt text depending on the item contents, type, and purpose. It should succinctly describe the visual contents of the image (which is typically not the same as the "description" field). See [WAI Images Tutorial](https://www.w3.org/WAI/tutorials/images/) for more tips.
 - Example value: `Man standing with pump machinery next to a river with trees and mountains in the distance`
 
-
 -------------
 
 ## Technical Fields
@@ -301,34 +303,3 @@ They can generally be filled out by CDIL team after metadata creation.
 ### image_thumb
 
 ### object_transcript
-
--------------
-
-## Uncommon or Legacy Fields
-
-### date_is_approximate 
-
-- **legacy only, don't use for new collections**
-- This field lets anyone looking at the collection know that the value in "date" is an estimation only.
-- Only fill out 'yes' if the value in "date" field is an estimation. If date is accurate, leave blank.
-- Example value: `yes`
-
-### relation
-
-- This field indicates if there are any relationships between resources. 
-- An example of this would be if a collection contains material from another collection, or appears in another source. The title of the related collection would be the value for this field. The related collection may be physical or digital.
-- This is not an often used field, and will usually be populated by the Digital Projects Manager.
-
-### Legacy CONTENTdm fields
-
-Collections that were migrated out of CONTENTdm in 2023 will have several columns created by CONTENTdm. 
-They will generally look like:
-
-`date created,date modified,reference url,cdmid,contentdm file name,contentdm file path`
-
-Please retain: 
-
-- "reference url", rename the column to `cdm_url` (This should not be named "reference_url"! It is helpful to retain this incase we need to look up old CDM urls)
-- "cdmid"
-
-The other columns can be removed--if they are retained, rename with "cdm" in front (removing spaces) and do NOT include in data outputs.
